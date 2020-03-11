@@ -8,7 +8,9 @@
 | --- | --------- |
 |   | **Node JS** |
 |1  | [What is NodeJS?](#what-is-nodejs) |
-|1  | [How can you avoid callback hells?](#how-can-you-avoid-callback-hells) |
+|2  | [How can you avoid callback hells?](#how-can-you-avoid-callback-hells) |
+|3  | [When are background/worker processes useful?](#when-are-background/worker-processes-useful) |
+
 
 
 ## Node Js
@@ -22,9 +24,18 @@
 
    **[⬆ Back to Top](#table-of-contents)**
    
-2. ### How can you avoid callback hells??
+2. ### How can you avoid callback hells?
 
    There are lots of ways to solve the issue of callback hells:  <br /> 1.modularization: break callbacks into independent functions,  <br /> 2.use a control flow library, like async.  <br /> 3.use generators with Promises,  <br /> 4.use async/await (note that it is only available in the latest v7 release and not in the LTS version
+
+
+   **[⬆ Back to Top](#table-of-contents)**
+   
+ 3. ### When are background/worker processes useful?
+
+  Worker processes are extremely useful if you'd like to do data processing in the background, like sending out emails or processing images.
+  <br/>
+  There are lots of options for this like RabbitMQ or Kafka.
 
 
    **[⬆ Back to Top](#table-of-contents)**
