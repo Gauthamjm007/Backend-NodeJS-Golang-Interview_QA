@@ -24,7 +24,7 @@
    
 2. ### How can you avoid callback hells??
 
-   There are lots of ways to solve the issue of callback hells:  \n 1.modularization: break callbacks into independent functions,  \n 2.use a control flow library, like async.  \n 3.use generators with Promises,  \n 4.use async/await (note that it is only available in the latest v7 release and not in the LTS version
+   There are lots of ways to solve the issue of callback hells:  <br /> 1.modularization: break callbacks into independent functions,  <br /> 2.use a control flow library, like async.  <br /> 3.use generators with Promises,  <br /> 4.use async/await (note that it is only available in the latest v7 release and not in the LTS version
 
 
    **[⬆ Back to Top](#table-of-contents)**
