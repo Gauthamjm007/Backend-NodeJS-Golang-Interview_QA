@@ -9,7 +9,7 @@
 |   | **Node JS** |
 |1  | [What is NodeJS?](#what-is-nodejs) |
 |2  | [How can you avoid callback hells?](#how-can-you-avoid-callback-hells) |
-|3  | [When are background/worker processes useful?](#when-are-background/worker-processes-useful) |
+|3  | [When are background or worker processes useful?](#when-are-background-or-worker-processes-useful) |
 
 
 
@@ -31,7 +31,7 @@
 
    **[⬆ Back to Top](#table-of-contents)**
    
- 3. ### When are background/worker processes useful?
+ 3. ### When are background or worker processes useful?
 
 	Worker processes are extremely useful if you'd like to do data processing in the background, like sending out emails or processing images.
 	<br/>
