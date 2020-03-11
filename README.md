@@ -33,9 +33,9 @@
    
  3. ### When are background/worker processes useful?
 
-  Worker processes are extremely useful if you'd like to do data processing in the background, like sending out emails or processing images.
-  <br/>
-  There are lots of options for this like RabbitMQ or Kafka.
+	Worker processes are extremely useful if you'd like to do data processing in the background, like sending out emails or processing images.
+	<br/>
+	There are lots of options for this like RabbitMQ or Kafka.
 
 
    **[⬆ Back to Top](#table-of-contents)**
