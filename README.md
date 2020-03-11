@@ -8,7 +8,7 @@
 | --- | --------- |
 |   | **Node JS** |
 |1  | [What is NodeJS?](#what-is-nodejs) |
-
+|1  | [How can you avoid callback hells?](#how-can-you-avoid-callback-hells) |
 
 
 ## Node Js
@@ -21,4 +21,10 @@
 
 
    **[⬆ Back to Top](#table-of-contents)**
-    
+   
+2. ### How can you avoid callback hells??
+
+   There are lots of ways to solve the issue of callback hells:\ 1.modularization: break callbacks into independent functions,\2.use a control flow library, like async.\3.use generators with Promises,\4.use async/await (note that it is only available in the latest v7 release and not in the LTS version
+
+
+   **[⬆ Back to Top](#table-of-contents)**
