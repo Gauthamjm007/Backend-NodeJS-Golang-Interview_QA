@@ -11,7 +11,7 @@
 |2  | [How can you avoid callback hells?](#how-can-you-avoid-callback-hells) |
 |3  | [When are background or worker processes useful?](#when-are-background-or-worker-processes-useful) |
 |4  | [Why is NodeJS Single threaded?](#why-is-nodejs-single-threaded) |
-|5  | [Name the types of API functions in Node.js?](#name-the-types-of-api-functions-in-node.js) |
+|5  | [Name the types of API functions in Node?](#name-the-types-of-api-functions-in-node) |
 
 
 
@@ -50,7 +50,7 @@
 
    **[⬆ Back to Top](#table-of-contents)**
    
-5. ### Name the types of API functions in Node.js?
+5. ### Name the types of API functions in Node?
 
 	There are two types of functions in Node.js. <br/>
 	1.Blocking functions - In a blocking operation, all other code is blocked from executing until an I/O event that is being waited on occurs. Blocking functions execute synchronously. <br/>2.Non-blocking functions - In a non-blocking operation, multiple I/O calls can be performed without the execution of the program being halted. Non-blocking functions execute asynchronously.
