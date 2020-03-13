@@ -10,6 +10,8 @@
 |1  | [What is NodeJS?](#what-is-nodejs) |
 |2  | [How can you avoid callback hells?](#how-can-you-avoid-callback-hells) |
 |3  | [When are background or worker processes useful?](#when-are-background-or-worker-processes-useful) |
+|4  | [Why is NodeJS Single threaded?](#why-is-nodejs-single-threaded) |
+
 
 
 
@@ -31,7 +33,7 @@
 
    **[⬆ Back to Top](#table-of-contents)**
    
- 3. ### When are background or worker processes useful?
+3. ### When are background or worker processes useful?
 
 	Worker processes are extremely useful if you'd like to do data processing in the background, like sending out emails or processing images.
 	<br/>
@@ -39,3 +41,12 @@
 
 
    **[⬆ Back to Top](#table-of-contents)**
+   
+4. ### Why is NodeJS Single threaded?
+
+	Node.js is single-threaded for async processing. By doing async processing on a single-thread under typical web loads, more performance and scalability can be achieved as opposed to the typical thread-based implementation.
+
+
+   **[⬆ Back to Top](#table-of-contents)**
+   
+  
