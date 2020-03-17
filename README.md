@@ -14,7 +14,7 @@
 | 5   | [Name the types of API functions in Node?](#name-the-types-of-api-functions-in-node)                                                                                         |
 | 6   | [Explain chaining in Nodejs?](#explain-chaining-in-nodejs)                                                                                                                   |
 | 7   | [What are streams in Nodejs Explain the different types of streams present in Nodejs?](#what-are-streams-in-nodejs-explain-the-different-types-of-streams-present-in-nodejs) |
-| 8   | [What is package json?](#what-is-packagejson)                                                                                                                                |
+| 8   | [What is package json?](#what-is-package-json)                                                                                                                               |
 | 9   | [Explain the purpose of module exports?](#explain-the-purpose-of-module-exports)                                                                                             |
 | 10  | [List down the major security implementations within Node.js?](#list-down-the-major-security-implementations-within-nodejs)                                                  |
 | 11  | [Explain the concept of URL module?](#explain-the-concept-of-url-module)                                                                                                     |
@@ -90,7 +90,13 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-11. ### Explain the concept of middleware in Nodejs?
+11. ### Explain the concept of URL module?
+
+    The URL module splits up a web address into readable parts
+
+**[⬆ Back to Top](#table-of-contents)**
+
+12. ### Explain the concept of middleware in Nodejs?
 
     In general, middleware is a function receives the Request and Response objects. In other words, in an application’s request-response cycle these functions have access to various request & response objects along with the next function of the cycle,The next function of middleware is represented with the help of a variable, usually named next. Most commonly performed tasks by the middleware functions are <br/>
 
