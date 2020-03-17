@@ -92,12 +92,11 @@
 
 11. ### Explain the concept of middleware in Nodejs?
 
-        In general, middleware is a function receives the Request and Response objects. In other words, in an application’s request-response cycle these functions have access to various request &  response objects along with the next function of the cycle. The next function of middleware is represented with the help of a variable, usually named next. Most commonly performed tasks by the middleware functions are:<br/>
-        <ul>
-        	<li>Execute any type of code</li>
-         	<li>Update or modify the request and the response objects</li>
-         	<li>Finish the request-response cycle</li>
-         	<li>Invoke the next middleware in the stack</li>
-        </ul>
+        In general, middleware is a function receives the Request and Response objects.<br/> In other words, in an application’s request-response cycle these functions have access to various request &  response objects along with the next function of the cycle. <br/>The next function of middleware is represented with the help of a variable, usually named next. Most commonly performed tasks by the middleware functions are <br/>
+
+        	Execute any type of code<br/>
+         	Update or modify the request and the response objects<br/>
+         	Finish the request-response cycle<br/>
+         	Invoke the next middleware in the stack
 
 **[⬆ Back to Top](#table-of-contents)**
