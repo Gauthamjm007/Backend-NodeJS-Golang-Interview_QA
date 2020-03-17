@@ -53,36 +53,36 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-6 ### Explain chaining in Node js?
+6. ### Explain chaining in Node js?
 
-    Chaining is a mechanism whereby the output of one stream is connected to another stream creating a chain of multiple stream operations.
-
-**[⬆ Back to Top](#table-of-contents)**
-
-7 ### What are streams in Nodejs? Explain the different types of streams present in Nodejs?
-
-    Streams are objects that allow the reading of data from the source and writing of data to the destination as a continuous process.<br/>
-    There are four types of streams.<br/>
-    <Readable> to facilitate the reading operation.<br/>
-    <Writable> to facilitate the writing operation.<br/>
-    <Duplex> to facilitate both read and write operations.<br/>
-    <Transform> is a form of Duplex stream that performs computations based on the available input.<br/>
+   Chaining is a mechanism whereby the output of one stream is connected to another stream creating a chain of multiple stream operations.
 
 **[⬆ Back to Top](#table-of-contents)**
 
-8 ### What is package.json?
+7. ### What are streams in Nodejs? Explain the different types of streams present in Nodejs?
 
-    The package.json file in Node.js is the heart of the entire application. It is basically the manifest file that contains the metadata of the project where we define the properties of a package.
+   Streams are objects that allow the reading of data from the source and writing of data to the destination as a continuous process.<br/>
+   There are four types of streams.<br/>
+   <Readable> to facilitate the reading operation.<br/>
+   <Writable> to facilitate the writing operation.<br/>
+   <Duplex> to facilitate both read and write operations.<br/>
+   <Transform> is a form of Duplex stream that performs computations based on the available input.<br/>
 
 **[⬆ Back to Top](#table-of-contents)**
 
-9 ### Explain the purpose of module.exports?
+8. ### What is package.json?
 
-    A module in Node.js is used to encapsulate all the related codes into a single unit of code which can be interpreted by shifting all related functions into a single file
+   The package.json file in Node.js is the heart of the entire application. It is basically the manifest file that contains the metadata of the project where we define the properties of a package.
 
 **[⬆ Back to Top](#table-of-contents)**
 
-10 ### List down the major security implementations within Node.js?
+9. ### Explain the purpose of module.exports?
+
+   A module in Node.js is used to encapsulate all the related codes into a single unit of code which can be interpreted by shifting all related functions into a single file
+
+**[⬆ Back to Top](#table-of-contents)**
+
+10. ### List down the major security implementations within Node.js?
 
     Major security implementations in Node.js are:Authentications,Error Handling
 
