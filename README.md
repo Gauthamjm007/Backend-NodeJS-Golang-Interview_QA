@@ -14,9 +14,9 @@
 | 5   | [Name the types of API functions in Node?](#name-the-types-of-api-functions-in-node)                                                                                         |
 | 6   | [Explain chaining in Nodejs?](#explain-chaining-in-nodejs)                                                                                                                   |
 | 7   | [What are streams in Nodejs Explain the different types of streams present in Nodejs?](#what-are-streams-in-nodejs-explain-the-different-types-of-streams-present-in-nodejs) |
-| 8   | [What is package.json?](#what-is-package.json)                                                                                                                               |
-| 9   | [Explain the purpose of module.exports?](#explain-the-purpose-of-module.exports)                                                                                             |
-| 10  | [List down the major security implementations within Node.js?](#list-down-the-major-security-implementations-within-node-.-js)                                               |
+| 8   | [What is package json?](#what-is-packagejson)                                                                                                                                |
+| 9   | [Explain the purpose of module exports?](#explain-the-purpose-of-module-exports)                                                                                             |
+| 10  | [List down the major security implementations within Node.js?](#list-down-the-major-security-implementations-within-nodejs)                                                  |
 | 11  | [Explain the concept of URL module?](#explain-the-concept-of-url-module)                                                                                                     |
 | 12  | [Explain the concept of middleware in Nodejs?](#explain-the-concept-of-middleware-in-nodejs)                                                                                 |
 
@@ -72,19 +72,19 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-8. ### What is package.json?
+8. ### What is package json?
 
    The package.json file in Node.js is the heart of the entire application. It is basically the manifest file that contains the metadata of the project where we define the properties of a package.
 
 **[⬆ Back to Top](#table-of-contents)**
 
-9. ### Explain the purpose of module.exports?
+9. ### Explain the purpose of module exports?
 
    A module in Node.js is used to encapsulate all the related codes into a single unit of code which can be interpreted by shifting all related functions into a single file
 
 **[⬆ Back to Top](#table-of-contents)**
 
-10. ### List down the major security implementations within Node.js?
+10. ### List down the major security implementations within Nodejs?
 
     Major security implementations in Node.js are:Authentications,Error Handling
 
