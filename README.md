@@ -53,7 +53,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-6. ### Explain chaining in Node js?
+6. ### Explain chaining in Nodejs?
 
    Chaining is a mechanism whereby the output of one stream is connected to another stream creating a chain of multiple stream operations.
 
