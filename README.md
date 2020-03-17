@@ -17,6 +17,7 @@
 | 8   | [What is package.json?](#what-is-package.json)                                                                                                                               |
 | 9   | [Explain the purpose of module.exports?](#explain-the-purpose-of-module.exports)                                                                                             |
 | 10  | [List down the major security implementations within Node.js?](#list-down-the-major-security-implementations-within-node-.-js)                                               |
+| 11  | [Explain the concept of URL module?](#explain-the-concept-of-url-module)                                                                                                     |
 
 ## Node Js
 
@@ -85,5 +86,11 @@
 10. ### List down the major security implementations within Node.js?
 
     Major security implementations in Node.js are:Authentications,Error Handling
+
+**[⬆ Back to Top](#table-of-contents)**
+
+11. ### Explain the concept of URL module?
+
+    The URL module of Node.js provides various utilities for URL resolution and parsing. It is a built-in module that helps in splitting up the web address into a readable forma
 
 **[⬆ Back to Top](#table-of-contents)**
