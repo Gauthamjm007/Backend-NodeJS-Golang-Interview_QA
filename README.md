@@ -18,6 +18,7 @@
 | 9   | [Explain the purpose of module.exports?](#explain-the-purpose-of-module.exports)                                                                                             |
 | 10  | [List down the major security implementations within Node.js?](#list-down-the-major-security-implementations-within-node-.-js)                                               |
 | 11  | [Explain the concept of URL module?](#explain-the-concept-of-url-module)                                                                                                     |
+| 12  | [Explain the concept of middleware in Nodejs?](#explain-the-concept-of-middleware-in-nodejs)                                                                                 |
 
 ## Node Js
 
@@ -89,8 +90,14 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-11. ### Explain the concept of URL module?
+11. ### Explain the concept of middleware in Nodejs?
 
-    The URL module of Node.js provides various utilities for URL resolution and parsing. It is a built-in module that helps in splitting up the web address into a readable forma
+        In general, middleware is a function receives the Request and Response objects. In other words, in an application’s request-response cycle these functions have access to various request &  response objects along with the next function of the cycle. The next function of middleware is represented with the help of a variable, usually named next. Most commonly performed tasks by the middleware functions are:<br/>
+        <ul>
+        	<li>Execute any type of code</li>
+         	<li>Update or modify the request and the response objects</li>
+         	<li>Finish the request-response cycle</li>
+         	<li>Invoke the next middleware in the stack</li>
+        </ul>
 
 **[⬆ Back to Top](#table-of-contents)**
