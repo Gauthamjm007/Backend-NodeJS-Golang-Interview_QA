@@ -27,7 +27,7 @@
 | 19| [Explain stream in Nodejs along with its various types?](#explain-stream-in-nodejs-along-with-its-various-types) |
 | 20| [Describe the exit codes of Nodejs?](#describe-the-exit-codes-of-nodejs) |
 | 21| [Is cryptography supported in Nodejs?](#is-cryptography-supported-in-nodejs) |
-| 22| [Explain the reason as to why Express ‘app’ and ‘server’ must be kept separate?](#explain-the-reason-as-to-why-express-‘app’-and-‘server’-must-be-kept-separate) |
+| 22| [Explain the reason as to why Express app and server folder must be kept separate?](#explain-the-reason-as-to-why-express-app-and-server-folder-must-be-kept-separate) |
 
 ## Node Js
 
@@ -196,7 +196,7 @@
 **[⬆ Back to Top](#table-of-contents)**
 
 
-22. ### Explain the reason as to why Express ‘app’ and ‘server’ must be kept separate?
+22. ### Explain the reason as to why Express app and server folder must be kept separate?
 
     Express ‘app’ and ‘server’ must be kept separate as by doing this, you will be separating the API declaration from the network related configuration which benefits in the below listed ways:<br/>
     It allows testing the API in-process without having to perform the network calls<br/>
