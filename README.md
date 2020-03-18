@@ -171,12 +171,12 @@
 
 20. ### Describe the exit codes of Nodejs?
 
-    In Node.js, exit codes are a set of specific codes which are used for finishing a specific process. These processes can include the global object as well. Below are some of the exit codes used in Node.js:
-	*Uncaught fatal exception
-	*Unused
-	*Fatal Error
-	*Internal Exception handler Run-time failure
-	*Internal JavaScript Evaluation Failure
+    In Node.js, exit codes are a set of specific codes which are used for finishing a specific process. These processes can include the global object as well. Below are some of the exit codes used in Node.js:<br/>
+	*Uncaught fatal exception<br/>
+	*Unused<br/>
+	*Fatal Error<br/>
+	*Internal Exception handler Run-time failure<br/>
+	*Internal JavaScript Evaluation Failure<br/>
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -199,10 +199,10 @@
 22. ### Explain the reason as to why Express app and server folder must be kept separate?
 
     Express ‘app’ and ‘server’ must be kept separate as by doing this, you will be separating the API declaration from the network related configuration which benefits in the below listed ways:<br/>
-    It allows testing the API in-process without having to perform the network calls<br/>
-    Faster testing execution<br/>
-    Getting wider coverage metrics of the code<br/>
-    Allows deploying the same API under flexible and different network conditions<br/>
-	Better separation of concerns and cleaner code
+    *It allows testing the API in-process without having to perform the network calls<br/>
+    *Faster testing execution<br/>
+    *Getting wider coverage metrics of the code<br/>
+    *Allows deploying the same API under flexible and different network conditions<br/>
+	*Better separation of concerns and cleaner code
 
 **[⬆ Back to Top](#table-of-contents)**
