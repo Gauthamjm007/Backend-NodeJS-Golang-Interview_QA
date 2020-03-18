@@ -25,6 +25,9 @@
 | 17| [Explain the usage of a buffer class in Nodejs?](#explain-the-usage-of-a-buffer-class-in-nodejs) |
 | 18| [How does Nodejs handle the child threads?](#how-does-nodejs-handle-the-child-threads) |
 | 19| [Explain stream in Nodejs along with its various types?](#explain-stream-in-nodejs-along-with-its-various-types) |
+| 20| [Describe the exit codes of Nodejs?](#describe-the-exit-codes-of-nodejs) |
+| 21| [Is cryptography supported in Nodejs?](#is-cryptography-supported-in-nodejs) |
+| 22| [Explain the reason as to why Express ‘app’ and ‘server’ must be kept separate?](#explain-the-reason-as-to-why-express-‘app’-and-‘server’-must-be-kept-separate) |
 
 ## Node Js
 
@@ -162,5 +165,44 @@
     Writeable: Use for writing large chunks of data to the destination.<br/>
     Duplex: Used for both the functions; read and write.<br/>
     Transform: It is a duplex stream that is used for modifying the data.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+
+20. ### Describe the exit codes of Nodejs?
+
+    In Node.js, exit codes are a set of specific codes which are used for finishing a specific process. These processes can include the global object as well. Below are some of the exit codes used in Node.js:
+	*Uncaught fatal exception
+	*Unused
+	*Fatal Error
+	*Internal Exception handler Run-time failure
+	*Internal JavaScript Evaluation Failure
+
+**[⬆ Back to Top](#table-of-contents)**
+
+
+21. ### Is cryptography supported in Nodejs?
+
+    Yes, Node.js does support cryptography through a module called Crypto. This module provides various cryptographic functionalities like cipher, decipher, sign and verify functions, a set of wrappers for open SSL’s hash HMAC etc.<br/>
+	
+	```
+	const crypto = require'crypto');
+	const secret = 'akerude';
+	const hash = crypto.createHmac('swaEdu', secret).update('Welcome to Edureka').digest('hex');
+	console.log(hash);
+	
+	```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+
+22. ### Explain the reason as to why Express ‘app’ and ‘server’ must be kept separate?
+
+    Express ‘app’ and ‘server’ must be kept separate as by doing this, you will be separating the API declaration from the network related configuration which benefits in the below listed ways:<br/>
+    It allows testing the API in-process without having to perform the network calls<br/>
+    Faster testing execution<br/>
+    Getting wider coverage metrics of the code<br/>
+    Allows deploying the same API under flexible and different network conditions<br/>
+	Better separation of concerns and cleaner code
 
 **[⬆ Back to Top](#table-of-contents)**
