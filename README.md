@@ -4,29 +4,27 @@
 
 ### Table of Contents
 
-| No. | Questions                                                                                                                                                                    |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|     | **Node JS**                                                                                                                                                                  |
-| 1   | [What is NodeJS?](#what-is-nodejs)                                                                                                                                           |
-| 2   | [How can you avoid callback hells?](#how-can-you-avoid-callback-hells)                                                                                                       |
-| 3   | [When are background or worker processes useful?](#when-are-background-or-worker-processes-useful)                                                                           |
-| 4   | [Why is NodeJS Single threaded?](#why-is-nodejs-single-threaded)                                                                                                             |
-| 5   | [Name the types of API functions in Node?](#name-the-types-of-api-functions-in-node)                                                                                         |
-| 6   | [Explain chaining in Nodejs?](#explain-chaining-in-nodejs)                                                                                                                   |
-| 7   | [What are streams in Nodejs Explain the different types of streams present in Nodejs?](#what-are-streams-in-nodejs-explain-the-different-types-of-streams-present-in-nodejs) |
-| 8   | [What is package json?](#what-is-package-json)                                                                                                                               |
-| 9   | [Explain the purpose of module exports?](#explain-the-purpose-of-module-exports)                                                                                             |
-| 10  | [List down the major security implementations within Node.js?](#list-down-the-major-security-implementations-within-nodejs)                                                  |
-| 11  | [Explain the concept of URL module?](#explain-the-concept-of-url-module)                                                                                                     |
-| 12  | [Explain the concept of middleware in Nodejs?](#explain-the-concept-of-middleware-in-nodejs)                                                                                 |
-| 13  | [Explain libuv?](#explain-libuv)                                                                                                                                             |
-
-| 14 | [List down the two arguments that async queue takes as input?](#list-down-the-two-arguments-that-async-queue-takes-as-input) |
-| 15 | [Differentiate between spawn() and fork() methods in Nodejs?](<#differentiate-between-spawn()-and-fork()-methods-in-nodejs>) |
-| 16 | [Explain the purpose of ExpressJS package?](#explain-the-purpose-of-expressjs-package) |
-| 17 | [Explain the usage of a buffer class in Nodejs?](#explain-the-usage-of-a-buffer-class-in-nodejs) |
-| 18 | [How does Nodejs handle the child threads?](#how-does-nodejs-handle-the-child-threads) |
-| 19 | [Explain stream in Nodejs along with its various types?](#explain-stream-in-nodejs-along-with-its-various-types) |
+| No. | Questions |
+| --- | --------- |
+|   | **Node JS** |
+| 1 | [What is NodeJS?](#what-is-nodejs)|                                                                                                    
+| 2 | [How can you avoid callback hells?](#how-can-you-avoid-callback-hells)|                         
+| 3 | [When are background or worker processes useful?](#when-are-background-or-worker-processes-useful)|        
+| 4 | [Why is NodeJS Single threaded?](#why-is-nodejs-single-threaded)|                                                                          
+| 5 | [Name the types of API functions in Node?](#name-the-types-of-api-functions-in-node)|                                                          
+| 6 | [Explain chaining in Nodejs?](#explain-chaining-in-nodejs)|                                                                                
+| 7 | [What are streams in Nodejs Explain the different types of streams present in Nodejs?](#what-are-streams-in-nodejs-explain-the-different-types-of-streams-present-in-nodejs) |
+| 8 | [What is package json?](#what-is-package-json)|                                                                                                       | | 9 | [Explain the purpose of module exports?](#explain-the-purpose-of-module-exports)|                                                           
+| 10| [List down the major security implementations within Node.js?](#list-down-the-major-security-implementations-within-nodejs)|                         
+| 11| [Explain the concept of URL module?](#explain-the-concept-of-url-module)|                                        
+| 12| [Explain the concept of middleware in Nodejs?](#explain-the-concept-of-middleware-in-nodejs)|                                            
+| 13| [Explain libuv?](#explain-libuv)|
+| 14| [List down the two arguments that async queue takes as input?](#list-down-the-two-arguments-that-async-queue-takes-as-input) |
+| 15| [Differentiate between spawn() and fork() methods in Nodejs?](#differentiate-between-spawn()-and-fork()-methods-in-nodejs) |
+| 16| [Explain the purpose of ExpressJS package?](#explain-the-purpose-of-expressjs-package) |
+| 17| [Explain the usage of a buffer class in Nodejs?](#explain-the-usage-of-a-buffer-class-in-nodejs) |
+| 18| [How does Nodejs handle the child threads?](#how-does-nodejs-handle-the-child-threads) |
+| 19| [Explain stream in Nodejs along with its various types?](#explain-stream-in-nodejs-along-with-its-various-types) |
 
 ## Node Js
 
