@@ -20,7 +20,7 @@
 | 12| [Explain the concept of middleware in Nodejs?](#explain-the-concept-of-middleware-in-nodejs)|                                            
 | 13| [Explain libuv?](#explain-libuv)|
 | 14| [List down the two arguments that async queue takes as input?](#list-down-the-two-arguments-that-async-queue-takes-as-input) |
-| 15| [Differentiate between spawn() and fork() methods in Nodejs?](#differentiate-between-spawn()-and-fork()-methods-in-nodejs) |
+| 15| [Differentiate between spawn and fork methods in Nodejs?](#differentiate-between-spawn-and-fork-methods-in-nodejs) |
 | 16| [Explain the purpose of ExpressJS package?](#explain-the-purpose-of-expressjs-package) |
 | 17| [Explain the usage of a buffer class in Nodejs?](#explain-the-usage-of-a-buffer-class-in-nodejs) |
 | 18| [How does Nodejs handle the child threads?](#how-does-nodejs-handle-the-child-threads) |
@@ -28,6 +28,9 @@
 | 20| [Describe the exit codes of Nodejs?](#describe-the-exit-codes-of-nodejs) |
 | 21| [Is cryptography supported in Nodejs?](#is-cryptography-supported-in-nodejs) |
 | 22| [Explain the reason as to why Express app and server folder must be kept separate?](#explain-the-reason-as-to-why-express-app-and-server-folder-must-be-kept-separate) |
+| 23| [What is the role of asset module in nodejs?](#what-is-the-role-of-asset-module-in-nodejs) |
+| 24| [What is the role of async_hooks module in nodejs?](#what-is-the-role-of-async_hooks-module-in-nodejs) |
+| 25| [What are buffer objects in nodejs?](#what-are-buffer-objects-in-nodejs) |
 
 ## Node Js
 
@@ -134,7 +137,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-15. ### Differentiate between spawn() and fork() methods in Nodejs?
+15. ### Differentiate between spawn and fork methods in Nodejs?
 
     In Node.js, the spawn() is used to launch a new process with the provided set of commands. This method doesn’t create a new V8 instance and just one copy of the node module is active on the processor. When your child process returns a large amount of data to the Node you can invoke this method.
 
@@ -204,5 +207,27 @@
     *Getting wider coverage metrics of the code<br/>
     *Allows deploying the same API under flexible and different network conditions<br/>
 	*Better separation of concerns and cleaner code
+
+**[⬆ Back to Top](#table-of-contents)**
+
+
+23. ### What is the role of asset module in nodejs?
+
+    The assert module provides a set of assertion functions for verifying invariants
+
+**[⬆ Back to Top](#table-of-contents)**
+
+24. ### What is the role of async_hooks module in nodejs?
+
+    The async_hooks module provides an API to track asynchronous resources. It can be accessed using:
+	```
+	const async_hooks = require('async_hooks');
+	```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+25. ### What are buffer objects in nodejs?
+
+    In Node.js, Buffer objects are used to represent binary data in the form of a sequence of bytes. Many Node.js APIs, for example streams and file system operations, support Buffers, as interactions with the operating system or other processes generally always happen in terms of binary data
 
 **[⬆ Back to Top](#table-of-contents)**
