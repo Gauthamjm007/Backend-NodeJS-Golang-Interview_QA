@@ -243,7 +243,7 @@
 
 27. ### How can we spawn the child process asynchronously without 	blocking the Nodejs event loop?
 
-    ** child_process.spawn()** method spawns the child process asynchronously, without blocking the Node.js event loop,The child_process. <br/>** spawnSync() **  function provides equivalent functionality in a synchronous manner that blocks the event loop until the spawned process either exits or is terminated
+    **child_process.spawn()** method spawns the child process asynchronously, without blocking the Node.js event loop,The child_process. <br/>**spawnSync()**  function provides equivalent functionality in a synchronous manner that blocks the event loop until the spawned process either exits or is terminated
 
 **[⬆ Back to Top](#table-of-contents)**
 
