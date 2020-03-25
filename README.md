@@ -278,5 +278,14 @@
 	console.log(`Worker ${process.pid} started`);
 }
 	```
+	Running Node.js will now share port 8000 between the workers:
+	```
+	$ node server.js
+	Master 3596 is running
+	Worker 4324 started
+	Worker 4520 started
+	Worker 6056 started
+	Worker 5644 started
+	```
 
 **[⬆ Back to Top](#table-of-contents)**
