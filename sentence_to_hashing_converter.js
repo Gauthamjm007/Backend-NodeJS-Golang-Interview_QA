@@ -8,4 +8,4 @@ function hashing(str) {
   );
 }
 
-console.log(hashing("What are buffer objects in nodejs"));
+console.log(hashing("How can we take advantage of multi-core system in Nodejs as nodejs works on single thread"));
