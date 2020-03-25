@@ -32,7 +32,7 @@
 | 24| [What is the role of async_hooks module in nodejs?](#what-is-the-role-of-async_hooks-module-in-nodejs) |
 | 25| [What are buffer objects in nodejs?](#what-are-buffer-objects-in-nodejs) |
 | 26| [What are the different ways of implementing Addons in NodeJS?](#what-are-the-different-ways-of-implementing-addons-in-nodejs) |
-| 27| [How can we spawn the child process asynchronously , without blocking the Nodejs event loop?](#how-can-we-spawn-the-child-process-asynchronously-,-without-blocking-the-nodejs-event-loop) |
+| 27| [How can we spawn the child process asynchronously without blocking the Nodejs event loop?](#how-can-we-spawn-the-child-process-asynchronously-without-blocking-the-nodejs-event-loop) |
 | 28| [How can we take advantage of multi-core system in Nodejs as nodejs works on single thread?](#how-can-we-take-advantage-of-multi-core-system-in-nodejs-as-nodejs-works-on-single-thread) |
 
 ## Node Js
@@ -241,7 +241,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-27. ### How can we spawn the child process asynchronously , without 	blocking the Nodejs event loop?
+27. ### How can we spawn the child process asynchronously without 	blocking the Nodejs event loop?
 
     ** child_process.spawn()** method spawns the child process asynchronously, without blocking the Node.js event loop,The child_process. <br/>** spawnSync() **  function provides equivalent functionality in a synchronous manner that blocks the event loop until the spawned process either exits or is terminated
 
