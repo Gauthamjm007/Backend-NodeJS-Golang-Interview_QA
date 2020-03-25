@@ -302,7 +302,7 @@
 
     There are around 21 inbuilt console methods , we can also built our own prototypes using new Console constructor function<br/>
 	here are a few popular one's<br/>
-	1. **console.clear()** will clear only the output in the current terminal viewport for the Node.js binary.<br/>
+	1.**console.clear()** will clear only the output in the current terminal viewport for the Node.js binary.<br/>
 	2.**console.error([data][, ...args])** Prints to stderr with newline. Multiple arguments can be passed, with the first used as the primary message and all additional used as substitution<br/>
 	3.**console.table(tabularData[, properties])**  a table with the columns of the properties of tabularData (or use properties) and rows of tabularData and log it.
 
