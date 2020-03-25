@@ -31,6 +31,9 @@
 | 23| [What is the role of asset module in nodejs?](#what-is-the-role-of-asset-module-in-nodejs) |
 | 24| [What is the role of async_hooks module in nodejs?](#what-is-the-role-of-async_hooks-module-in-nodejs) |
 | 25| [What are buffer objects in nodejs?](#what-are-buffer-objects-in-nodejs) |
+| 26| [What are the different ways of implementing Addons in NodeJS?](#what-are-the-different-ways-of-implementing-addons-in-nodejs) |
+| 27| [How can we spawn the child process asynchronously , without blocking the Nodejs event loop?](#how-can-we-spawn-the-child-process-asynchronously-,-without-blocking-the-nodejs-event-loop) |
+| 28| [How can we take advantage of multi-core system in Nodejs as nodejs works on single thread?](#how-can-we-take-advantage-of-multi-core-system-in-nodejs-as-nodejs-works-on-single-thread) |
 
 ## Node Js
 
@@ -229,5 +232,51 @@
 25. ### What are buffer objects in nodejs?
 
     In Node.js, Buffer objects are used to represent binary data in the form of a sequence of bytes. Many Node.js APIs, for example streams and file system operations, support Buffers, as interactions with the operating system or other processes generally always happen in terms of binary data
+
+**[⬆ Back to Top](#table-of-contents)**
+
+26. ### What are the different ways of implementing Addons in NodeJS?
+
+    There are three options for implementing Addons: <br/>N-API<br/> nan direct use of internal V8 <br/>  libuv <br/> Node.js libraries
+
+**[⬆ Back to Top](#table-of-contents)**
+
+27. ### How can we spawn the child process asynchronously , without 	blocking the Nodejs event loop?
+
+    ** child_process.spawn()** method spawns the child process asynchronously, without blocking the Node.js event loop,The child_process. <br/>** spawnSync() **  function provides equivalent functionality in a synchronous manner that blocks the event loop until the spawned process either exits or is terminated
+
+**[⬆ Back to Top](#table-of-contents)**
+
+28. ### How can we take advantage of multi-core system in Nodejs as nodejs works on single thread?
+
+    We can use node js cluster to use multicores in the hardware,The cluster module allows easy creation of child processes that all share server ports<br/>
+	```
+	const cluster = require('cluster');
+	const http = require('http');
+	const numCPUs = require('os').cpus().length;
+
+	if (cluster.isMaster) {
+	console.log(`Master ${process.pid} is running`);
+
+	// Fork workers.
+		for (let i = 0; i < numCPUs; i++) {
+    cluster.fork();
+	}
+
+	cluster.on('exit', (worker, code, signal) => {
+    console.log(`worker ${worker.process.pid} died`);
+  });
+	} 
+	else {
+  // Workers can share any TCP connection
+  // In this case it is an HTTP server
+	http.createServer((req, res) => {
+    res.writeHead(200);
+    res.end('hello world\n');
+	}).listen(8000);
+
+	console.log(`Worker ${process.pid} started`);
+}
+	```
 
 **[⬆ Back to Top](#table-of-contents)**
