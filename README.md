@@ -34,6 +34,8 @@
 | 26| [What are the different ways of implementing Addons in NodeJS?](#what-are-the-different-ways-of-implementing-addons-in-nodejs) |
 | 27| [How can we spawn the child process asynchronously without blocking the Nodejs event loop?](#how-can-we-spawn-the-child-process-asynchronously-without-blocking-the-nodejs-event-loop) |
 | 28| [How can we take advantage of multi-core system in Nodejs as nodejs works on single thread?](#how-can-we-take-advantage-of-multi-core-system-in-nodejs-as-nodejs-works-on-single-thread) |
+| 29| [What is the datatype of console?](#what-is-the-datatype-of-console) |
+| 30| [Which are the different console methods available?](#which-are-the-different-console-methods-available) |
 
 ## Node Js
 
@@ -287,5 +289,21 @@
 	Worker 6056 started
 	Worker 5644 started
 	```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+29. ### What is the datatype of console?
+
+    The datatype of console is an **object**
+
+**[⬆ Back to Top](#table-of-contents)**
+
+30. ### Which are the different console methods available?
+
+    There are around 21 inbuilt console methods , we can also built our own prototypes using new Console constructor function<br/>
+	here are a few popular one's<br/>
+	1. **console.clear()** will clear only the output in the current terminal viewport for the Node.js binary.<br/>
+	2.**console.error([data][, ...args])** Prints to stderr with newline. Multiple arguments can be passed, with the first used as the primary message and all additional used as substitution<br/>
+	3.**console.table(tabularData[, properties])**  a table with the columns of the properties of tabularData (or use properties) and rows of tabularData and log it.
 
 **[⬆ Back to Top](#table-of-contents)**
