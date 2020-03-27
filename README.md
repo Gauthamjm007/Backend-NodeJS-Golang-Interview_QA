@@ -533,12 +533,12 @@
 | 2 | [What are some of the salient features of express?](#what-are-some-of-the-salient-features-of-express)|
 | 3 | [Explain with an example a working of a simple express app?](#explain-with-an-example-a-working-of-a-simple-express-app)|
 | 4 | [Mention few properties of request parameter in express?](#mention-few-properties-of-request-parameter-in-express)|
-| 1 | [What is ExpressJS?](#what-is-expressjs)|
-| 1 | [What is ExpressJS?](#what-is-expressjs)|
-| 1 | [What is ExpressJS?](#what-is-expressjs)|
-| 1 | [What is ExpressJS?](#what-is-expressjs)|
-| 1 | [What is ExpressJS?](#what-is-expressjs)|
-| 1 | [What is ExpressJS?](#what-is-expressjs)|
+| 5 | [How to get the name parameters in express?](#how-to-get-the-name-parameters-in-express)|
+| 6 | [How to retrieve the get query string parameters using express? ?](#how-to-retrieve-the-get-query-string-parameters-using-express)|
+| 7 | [How to send a response back using express?](#how-to-send-a-response-back-using-express)|
+| 8 | [How to set http response status using express?](#how-to-set-http-response-status-using-express)|
+| 9 | [What are the different http status codes?](#what-are-the-different-http-status-codes)|
+| 10 | [Mention few properties of request parameter in express?](#mention-few-properties-of-request-parameter-in-express)|
 
 ## Express Js
 
@@ -588,6 +588,133 @@
 	here is a list of few req methods needed for you to knows
 	![req methods](/img/express_req_methods.png)
 
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+5. ### How to get the name parameters in express?  
+	
+	This property is an object containing properties mapped to the named route “parameters”. For example, if you have the route /user/:name, then the “name” property is available as req.params.name. This object defaults to {}.
+	```
+	// GET /user/tj
+	req.params.name
+	// => "tj"
+	```
+
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+6. ### How to retrieve the get query string parameters using express?   
+	
+	The query string is the part that comes after the URL path, and starts with a question mark ?.
+	```
+	?height=6&weight=60
+	//req.query.height - 6
+	//req.query.weight - 60
+	```
+
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+7. ### How to send a response back using express?   
+	
+	we can use any one of these commands
+	```
+	function(req, res) {
+		res.send('Hello World!')
+	}
+	function(req, res) {
+		res.end('Hello World!')
+	}
+	function(req, res) {
+		res.json({title:'Hello World!'})
+	}
+	```
+
+**[⬆ Back to Top](#table-of-contents---express-js
+
+
+8. ### How to set http response status using express?   
+	
+	we can either use **res.status()** or **res.sendStatus()**
+	```
+	res.status(404).send('File not found')
+	
+	//if sendStatus we no need to write send method , i will pre send a few inbuilt messages upon using that
+	
+	res.sendStatus(200)
+	// === res.status(200).send('OK')
+
+	res.sendStatus(403)
+	// === res.status(403).send('Forbidden')
+
+	res.sendStatus(404)
+	// === res.status(404).send('Not Found')
+
+	res.sendStatus(500)
+	// === res.status(500).send('Internal Server Error')
+	```
+
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+9. ### What are the different http status codes?   
+	
+	| Code | Message |	Description                   |
+	| ---- | ------- |	------------------------------|
+	|	100|Continue|Only a part of the request has been received by the server, but as long as it has not been rejected, the client should continue with the request|
+	|101|Switching Protocols|The server switches protocol|
+	|200 |OK|The request is OK.|
+	|201 |Created|The request is complete, and a new resource is created |
+	|202 |Accepted|The request is accepted for processing, but the processing is not complete|
+	|203 |Non-authoritative Information|The information in the entity header is from a local or third-party copy, not from the original server.|
+	|204 |No Content|A status code and a header are given in the response but there is no entity-body in the reply|
+	|205 |Reset Content|The browser should clear the form used for this transaction for additional input|
+	|206 |Partial Content|The server is returning partial data of the size requested. Used in response to a request specifying a Range header. The server must specify the range included in the response with the Content-Range header|
+	|300 |Multiple Choices|A link list. The user can select a link and go to that location. Maximum five addresses|
+	|301 |Moved Permanently|The requested page has moved to a new url |
+	|302 |Found|The requested page has moved temporarily to a new url|
+	|303  |See Other|The requested page can be found under a different url|
+	|304  |Not Modified|This is the response code to an If-Modified-Since or If-None-Match header, where the URL has not been modified since the specified date|
+	|305  |Use Proxy|The requested URL must be accessed through the proxy mentioned in the Location header|
+	|306  |Unused|This code was used in a previous version. It is no longer used, but the code is reserved|
+	|307  |Temporary Redirect|The requested page has moved temporarily to a new url|
+	|400  |Bad Request|The server did not understand the request|
+	|401  | Unauthorized|The requested page needs a username and a password|
+	|402  | Payment Required|You can not use this code yet.|
+	|403  |Forbidden|Access is forbidden to the requested page.|
+	|404  |Not Found|The server can not find the requested page.|
+	|405  |Method Not Allowed|The method specified in the request is not allowed|
+	|406  |Not Acceptable|The server can only generate a response that is not accepted by the client|
+	|407  | Proxy Authentication Required|You must authenticate with a proxy server before this request can be served|
+	|408  |Request Timeout|The request took longer than the server was prepared to wait|
+	|409  |Conflict|The request could not be completed because of a conflict|
+	|410  |Gone|The requested page is no longer available|
+	|411  |Length Required|The "Content-Length" is not defined. The server will not accept the request without it .|
+	|412  |Precondition Failed|The pre condition given in the request evaluated to false by the server|
+	|413  | Request Entity Too Large|The server will not accept the request, because the request entity is too large.|
+	|414  |Request-url Too Long|The server will not accept the request, because the url is too long. Occurs when you convert a "post" request to a "get" request with a long query information|
+	|415  |Unsupported Media Type|The server will not accept the request, because the mediatype is not supported |
+	|416  |Requested Range Not Satisfiable|The requested byte range is not available and is out of bounds|
+	|417  |Expectation Failed|The expectation given in an Expect request-header field could not be met by this server.|
+	|500  |Internal Server Error|The request was not completed. The server met an unexpected condition.|
+	|501  | Not Implemented|The request was not completed. The server did not support the functionality required.|
+	|502  | Bad Gateway|The request was not completed. The server received an invalid response from the upstream server.|
+	|503  |Service Unavailable|The request was not completed. The server is temporarily overloading or down.|
+	|504  |Gateway Timeout|The gateway has timed out.|
+	|505  |HTTP Version Not Supported|The server does not support the "http protocol" version|
+	
+
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+10. ### Mention few properties of request parameter in express? 
+	
+	You can access all the HTTP headers using the Request.headers property:
+	```
+	app.get('/', (req, res) => {
+	console.log(req.headers)
+	})
+	
+	app.get('/', (req, res) => {
+	req.header('User-Agent')
+	})
+	```
+	
 **[⬆ Back to Top](#table-of-contents---express-js)**
 
 
