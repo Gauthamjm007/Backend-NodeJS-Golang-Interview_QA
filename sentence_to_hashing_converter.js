@@ -2,10 +2,11 @@ function hashing(str) {
   return (
     "#" +
     str
+      .trim("")
       .split(" ")
       .map((ele) => ele.toLowerCase())
       .join("-")
   );
 }
 
-console.log(hashing("Mention few properties of request parameter in express "));
+console.log(hashing("How to provide file download using express"));
