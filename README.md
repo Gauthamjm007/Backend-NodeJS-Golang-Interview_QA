@@ -36,6 +36,15 @@
 | 28| [How can we take advantage of multi-core system in Nodejs as nodejs works on single thread?](#how-can-we-take-advantage-of-multi-core-system-in-nodejs-as-nodejs-works-on-single-thread) |
 | 29| [What is the datatype of console?](#what-is-the-datatype-of-console) |
 | 30| [Which are the different console methods available?](#which-are-the-different-console-methods-available) |
+| 31| [Can node js perform cryptographic functions?](#can-node-js-perform-cryptographic-functions) |
+| 32| [How can we read or write files in node js?](#how-can-we-read-or-write-files-in-node-js) |
+| 33| [Which are the global objects in Node JS?](#which-are-the-global-objects-in-node-js) |
+| 34| [How can we perform asynchronous network API in Node JS?](#how-can-we-perform-asynchronous-network-api-in-node-js) |
+| 35| [What are the utilities of OS module in NodeJS?](#what-are-the-utilities-of-os-module-in-nodejs) |
+| 36| [Which are the areas where it is suitable to use NodeJS?](#which-are-the-areas-where-it-is-suitable-to-use-nodejs) |
+| 37| [Which are the areas where it is not suitable to use NodeJS?](#which-are-the-areas-where-it-is-not-suitable-to-use-nodejs) |
+| 38| [What Are The Key Features Of NodeJs?](#what-are-the-key-features-of-nodejs) |
+
 
 ## Node Js
 
@@ -307,3 +316,106 @@
 	3.**console.table(tabularData[, properties])**  a table with the columns of the properties of tabularData (or use properties) and rows of tabularData and log it.
 
 **[⬆ Back to Top](#table-of-contents)**
+
+31. ### Can node js perform cryptographic functions?
+
+    Yes,The crypto module provides cryptographic functionality that includes a set of wrappers for OpenSSL's hash, HMAC, cipher, decipher, sign, and verify functions.<br/>
+
+	Use require('crypto') to access this module.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+32. ### How can we read or write files in node js?
+
+    The fs module provides an API for interacting with the file system in a manner closely modeled around standard POSIX functions.
+	To use this module:<br/>
+
+    const fs = require('fs');<br/>	
+	There are a few methods like 
+	<br/>fs.readFile(file, data[, options], callback)
+	<br/>fs.writeFile(file, data[, options], callback)
+
+
+
+**[⬆ Back to Top](#table-of-contents)**
+
+33. ### Which are the global objects in Node JS?
+
+    __dirname<br/>
+	__filename<br/>
+	clearImmediate(immediateObject)<br/>
+	clearInterval(intervalObject)<br/>
+	clearTimeout(timeoutObject)<br/>
+	console<br/>
+	exports<br/>
+	global<br/>
+	module<br/>
+	process<br/>
+	queueMicrotask(callback)<br/>
+	require()<br/>
+	setImmediate(callback[, ...args])<br/>
+	setInterval(callback, delay[, ...args])<br/>
+	setTimeout(callback, delay[, ...args])<br/>
+	TextDecoder<br/>
+	TextEncoder<br/>
+	URL<br/>
+	URLSearchParams<br/>
+	WebAssembly<br/>
+
+**[⬆ Back to Top](#table-of-contents)**
+
+34. ### How can we perform asynchronous network API in Node JS?
+
+    The net module provides an asynchronous network API for creating stream-based TCP or IPC servers (net.createServer()) and clients (net.createConnection()).
+
+	It can be accessed using:
+	<br/>
+
+	const net = require('net');
+
+**[⬆ Back to Top](#table-of-contents)**
+
+35. ###	What are the utilities of OS module in NodeJS?
+
+    The os module provides operating system-related utility methods and properties. It can be accessed using:<br/>
+
+	const os = require('os');.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+36. ###	Which are the areas where it is suitable to use NodeJS?
+
+    
+    I/O bound Applications<br/>
+    Data Streaming Applications<br/>
+    Data Intensive Real-time Applications (DIRT)<br/>
+    JSON APIs based Applications<br/>
+    Single Page Applications<br/>
+.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+
+37. ###	Which are the areas where it is not suitable to use NodeJS?
+
+    it’s not suitable for heavy applications involving more of CPU usage
+
+	
+
+**[⬆ Back to Top](#table-of-contents)**
+
+38. ###	What Are The Key Features Of NodeJs?
+
+    
+    **Asynchronous event driven IO** helps concurrent request handling – All APIs of Node.js are asynchronous. This feature means that if a Node receives a request for some Input/Output operation, it will execute that operation in the background and continue with the processing of other requests. Thus it will not wait for the response from the previous requests.<br/>
+    **Fast in Code execution** – Node.js uses the V8 JavaScript Runtime engine, the one which is used by Google Chrome. Node has a wrapper over the JavaScript engine which makes the runtime engine much faster and hence processing of requests within Node.js also become faster.<br/>
+    **Single Threaded but Highly Scalable** – Node.js uses a single thread model for event looping. The response from these events may or may not reach the server immediately. However, this does not block other operations. Thus making Node.js highly scalable. Traditional servers create limited threads to handle requests while Node.js creates a single thread that provides service to much larger numbers of such requests.<br/>
+    **Node.js library uses JavaScript** – This is another important aspect of Node.js from the developer’s point of view. The majority of developers are already well-versed in JavaScript. Hence, development in Node.js becomes easier for a developer who knows JavaScript.<br/>
+    **There is an Active and vibrant community for the Node.js** framework – The active community always keeps the framework updated with the latest trends in the web development.<br/>
+    **No Buffering** – Node.js applications never buffer any data. They simply output the data in chunks.<br/>
+.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+
+
