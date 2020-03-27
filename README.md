@@ -546,7 +546,7 @@
 | 15 | [What are the different types of middleware?](#what-are-the-different-types-of-middleware)|
 | 16 | [How to serve static assests from express? ](#how-to-serve-static-assests-from-express)|
 | 17 | [How to provide file download using express?](#how-to-provide-file-download-using-express)|
-| 18 | [How to use the Responsecookie() method to manipulate your cookies?](#how-to-use-the-responsecookie()-method-to-manipulate-your-cookies)|
+| 18 | [How to use the Response cookie () method to manipulate your cookies?](#how-to-use-the-response-cookie-()-method-to-manipulate-your-cookies)|
 | 19 | [How to manage sessions using express?](#how-to-manage-sessions-using-express)|
 | 20 | [How to provide file download using express?](#how-to-provide-file-download-using-express)|
 
@@ -828,7 +828,7 @@
 	
 **[⬆ Back to Top](#table-of-contents---express-js)**
 
-18. ###   How to use the Responsecookie() method to manipulate your cookies?
+18. ###   How to use the Response cookie () method to manipulate your cookies?
 	
 	Cookies are small pieces of data sent from a website and are stored in user's web browser while user is browsing that website. Every time the user loads that website back, the browser sends that stored data back to website or server, to distinguish user's previous 	activity.
 	
