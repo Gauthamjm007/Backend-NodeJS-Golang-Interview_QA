@@ -539,6 +539,11 @@
 | 8 | [How to set http response status using express?](#how-to-set-http-response-status-using-express)|
 | 9 | [What are the different http status codes?](#what-are-the-different-http-status-codes)|
 | 10 | [Mention few properties of request parameter in express?](#mention-few-properties-of-request-parameter-in-express)|
+| 11 | [How can you change http header value of a response?](#how-can-you-change-http-header-value-of-a-response)|
+| 12 | [How to redirect to other pages server-side?](#how-to-redirect-to-other-pages-server-side)|
+| 13 | [Mention few properties of request parameter in express?](#mention-few-properties-of-request-parameter-in-express)|
+| 14 | [Mention few properties of request parameter in express?](#mention-few-properties-of-request-parameter-in-express)|
+| 15 | [Mention few properties of request parameter in express?](#mention-few-properties-of-request-parameter-in-express)|
 
 ## Express Js
 
@@ -713,6 +718,34 @@
 	app.get('/', (req, res) => {
 	req.header('User-Agent')
 	})
+	```
+	
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+11. ### How can you change http header value of a response? 
+	
+	You can change any HTTP header value using Response.set():
+	```
+	res.set('Content-Type', 'text/html')
+	res.type('json')
+	// => 'application/json'
+
+	res.type('application/json')
+	// => 'application/json'
+
+	res.type('png')
+	// => image/png:
+	```
+	
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+12. ### How to redirect to other pages server-side? 
+	
+	Redirects are common in Web Development. You can create a redirect using the Response.redirect() method:<br/>
+	```
+	res.redirect('/go-there')
+	//it can be either a url or a path of file
+	res.redirect(301, '/go-there')
 	```
 	
 **[⬆ Back to Top](#table-of-contents---express-js)**
