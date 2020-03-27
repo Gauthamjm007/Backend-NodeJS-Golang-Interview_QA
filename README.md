@@ -541,9 +541,15 @@
 | 10 | [Mention few properties of request parameter in express?](#mention-few-properties-of-request-parameter-in-express)|
 | 11 | [How can you change http header value of a response?](#how-can-you-change-http-header-value-of-a-response)|
 | 12 | [How to redirect to other pages server-side?](#how-to-redirect-to-other-pages-server-side)|
-| 13 | [Mention few properties of request parameter in express?](#mention-few-properties-of-request-parameter-in-express)|
-| 14 | [Mention few properties of request parameter in express?](#mention-few-properties-of-request-parameter-in-express)|
-| 15 | [Mention few properties of request parameter in express?](#mention-few-properties-of-request-parameter-in-express)|
+| 13 | [How does routing work in express?](#how-does-routing-work-in-express)|
+| 14 | [What are the tasks that a middleware can do?](#what-are-the-tasks-that-a-middleware-can-do)|
+| 15 | [What are the different types of middleware?](#what-are-the-different-types-of-middleware)|
+| 16 | [How to serve static assests from express? ](#how-to-serve-static-assests-from-express)|
+| 17 | [How to provide file download using express?](#how-to-provide-file-download-using-express)|
+| 18 | [How to use the Response . cookie() method to manipulate your cookies?](#how-to-use-the-response-.-cookie()-method-to-manipulate-your-cookies)|
+| 19 | [How to manage sessions using express?](#how-to-manage-sessions-using-express)|
+| 20 | [How to provide file download using express?](#how-to-provide-file-download-using-express)|
+
 
 ## Express Js
 
@@ -749,6 +755,158 @@
 	```
 	
 **[⬆ Back to Top](#table-of-contents---express-js)**
+
+13. ###  How does routing work in express? 
+	
+	Routing is the process of determining what should happen when a URL is called, or also which parts of the application should handle a specific incoming request.<br/>
+
+	In the Hello World example we used this code<br/>
+	```
+	app.get('/', function(req, res) { 
+     /* */ 
+	})
+	//This creates a route that maps accessing the root domain URL / using the HTTP GET method to the response we want to provide.
+	```
+	
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+14. ###   What are the tasks that a middleware can do? 
+	
+	Middleware functions can perform the following tasks:<br/>
+
+    Execute any code.<br/>
+    Make changes to the request and the response objects.<br/>
+    End the request-response cycle.<br/>
+    Call the next middleware function in the stack.<br/>
+
+	
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+15. ###   What are the different types of middleware?
+	
+	An Express application can use the following types of middleware:<br/>
+
+    
+    Application-level middleware<br/>
+    Router-level middleware<br/>
+    Error-handling middleware<br/>
+    Built-in middleware<br/>
+    Third-party middleware
+
+	
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+16. ###    How to serve static assests from express?
+	
+	It’s common to have images, CSS and more in a public subfolder, and expose them to the root level:
+
+    
+    ```
+	const express = require('express')
+	const app = express()
+
+	app.use(express.static('public'))
+
+
+	app.listen(3000, () => console.log('Server ready'))
+	```
+
+	
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+17. ###   How to provide file download using express?
+	
+	Express provides a handy method to transfer a file as attachment: Response.download().<br/>
+
+	Once a user hits a route that sends a file using this method, browsers will prompt the user for download.<br/>
+
+	The Response.download() method allows you to send a file attached to the request, and the browser instead of showing it in the page, it will save it to disk.<br/>
+	```
+	app.get('/', (req, res) => res.download('./file.pdf'))
+	```
+
+	
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+18. ###   How to use the Response . cookie() method to manipulate your cookies?
+	
+	Cookies are small pieces of data sent from a website and are stored in user's web browser while user is browsing that website. Every time the user loads that website back, the browser sends that stored data back to website or server, to distinguish user's previous 	activity.
+	
+
+	```
+	res.cookie('username', 'Adam')
+	
+	This method accepts a third parameter which contains various options:
+	res.cookie('username', 'Adam', { domain: '.bangalore.com', path: '/administrator', secure: true })
+
+	res.cookie('username', 'Adam', { expires: new Date(Date.now() + 900000), httpOnly: true })
+	
+	//clear cookie
+	res.clearCookie('username')
+	```
+	
+	The most useful parameters you can set are:
+	| Value | Description |
+	| ----- | ----------- |
+	| domain | the cookie domain name|
+	|expires|set the cookie expiration date. If missing, or 0, the cookie is a session cookie|
+	|httpOnly|set the cookie to be accessible only by the web server. See HttpOnly|
+	|maxAge|set the expiry time relative to the current time, expressed in milliseconds|
+	|path|the cookie path. Defaults to /|
+	|secure|Marks the cookie HTTPS only|
+	|signed| 	set the cookie to be signed|
+	|sameSite|Value of SameSite|
+
+	
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+19. ###   How to manage sessions using express?
+	
+	We’ll use the express-session module, which is maintained by the Express team.When implemented, every user of you API or website will be assigned a unique session, and this allows you to store the userstate.as by default Express requests are sequential and no request can be linked to each other. There is no way to know if this request comes from a client that already performed a request previously.
+	```
+	const express = require('express')
+	const session = require('express-session')
+
+	const app = express()
+	app.use(session(
+	'secret': '343ji43j4n3jn4jk3n'
+	))
+	```
+	All solutions store the session id in a cookie, and keep the data server-side. The client will receive the session id in a cookie, and will send it along with every HTTP request.
+
+	We’ll reference that server-side to associate the session id with the data stored locally.
+
+	Memory is the default, it requires no special setup on your part, it’s the simplest thing but it’s meant only for development purposes.
+
+	The best choice is a memory cache like Redis, for which you need to setup its own infrastructure.
+
+	
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+20. ###   How to process forms using Express? 
+	
+	The form data will be sent in the POST request body.
+
+	To extract it, you will use the express.urlencoded() middleware, provided by Express:
+	```
+	const express = require('express')
+	const app = express()
+
+	app.use(express.urlencoded())
+	```
+	Now you need to create a POST endpoint on the /submit-form route, and any data will be available on Request.body:
+	```
+	app.post('/submit-form', (req, res) => {
+	const username = req.body.username
+	//...
+	res.end()
+	})
+	```
+
+	
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+
 
 
 
