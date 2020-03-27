@@ -586,7 +586,7 @@
 4. ### Mention few properties of request parameter in express? 
 	
 	here is a list of few req methods needed for you to knows
-	[](/img/express_req_methods.png)
+	![req methods](/img/express_req_methods.png)
 
 **[⬆ Back to Top](#table-of-contents---express-js)**
 
