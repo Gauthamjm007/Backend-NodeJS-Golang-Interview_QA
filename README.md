@@ -47,8 +47,10 @@
 | 39| [Explain REPL In NodeJs?](#explain-repl-in-nodejs) |
 | 40| [Can you write CRUD operations in Node js without using frameworks?](#can-you-write-crud-operations-in-node-js-without-using-frameworks) |
 | 41| [Can You Create HTTP Server In Nodejs Explain The Code Used For It?](#can-you-create-http-server-in-nodejs-explain-the-code-used-for-it) |
+| 42| [What Is The Difference Between Nodejs AJAX And JQuery?](#what-is-the-difference-between-nodejs-ajax-and-jquery) |
+| 43| [What Is EventEmitter In NodeJs? ](#what-is-eventemitter-in-nodejs) |
+| 44| [What Is A Child_process Module In NodeJs? ](#what-is-a-child_process-module-in-nodejs) |
 
- Explain REPL In Node.Js? 
 ## Node Js
 
 1. ### What is NodeJS?
@@ -461,24 +463,64 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-41. ###	Can You Create HTTP Server In Nodejs Explain The Code Used For It?
+42. ###	What Is The Difference Between Nodejs AJAX And JQuery?
 
     
-    Yes, we can create HTTP Server in Node.js. We can use the <http-server> command to do so.
+    The one common trait between Node.js, AJAX, and jQuery is that all of them are the advanced implementation of JavaScript. However, they serve completely different purposes.<br/>
 
-	Following is the sample code.<br/>
-	```
-	const http = require('http');
-	const server = http.createServer(function (request, response){ 
-		response.writeHead(200, {'Content-Type': 'text/plain'}); 
-		response.end('Welcome Viewers\n'); 
-	});
-	server.listen(8080); // The port where you want to start with.
-	```
+	**Node.Js** :<br/>
+
+	It is a server-side platform for developing client-server applications. For example, if we’ve to build an online employee management system, then we won’t do it using client-side JS. But the Node.js can certainly do it as it runs on a server similar to Apache, Django not in a browser.<br/>
+
+	**AJAX** (Aka Asynchronous Javascript And XML) :<br/>
+
+	It is a client-side scripting technique, primarily designed for rendering the contents of a page without refreshing it. There are a no. of large companies utilizing AJAX such as Facebook and Stack Overflow to display dynamic content.<br/>
+
+	**JQuery** :<br/>
+
+	It is a famous JavaScript module which complements AJAX, DOM traversal, looping and so on. This library provides many useful functions to help in JavaScript development. However, it’s not mandatory to use it but as it also manages cross-browser compatibility, so can help you produce highly maintainable web applications.<br/>
 
 .
 
-**[⬆ Back to Top](#table-of-contents)**?
+**[⬆ Back to Top](#table-of-contents)**
+
+43. ###	What Is EventEmitter In NodeJs?
+
+    
+    Events module in Node.js allows us to create and handle custom events. The Event module contains “EventEmitter” class which can be used to raise and handle custom events. It is accessible via the following code.<br/>
+	```
+	// Import events module
+	var events = require('events');
+
+	// Create an eventEmitter object
+	var eventEmitter = new events.EventEmitter();
+	```
+	<br/>
+	When an EventEmitter instance encounters an error, it emits an “error” event. When a new listener gets added, it fires a “newListener” event and when a listener gets removed, it fires a “removeListener” event.
+
+	EventEmitter provides multiple properties like “on” and “emit”. The “on” property is used to bind a function to the event and “emit” is used to fire an event.
+.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+
+44. ###	What Is A Child_process Module In NodeJs?
+
+    
+    Node.js supports the creation of child processes to help in parallel processing along with the event-driven model.<br/>
+
+	The Child processes always have three streams <child.stdin>, child.stdout, and child.stderr. The <stdio> stream of the parent process shares the streams of the child process.<br/>
+
+	Node.js provides a <child_process> module which supports following three methods to create a child process.<br/>
+
+		**exec** – <child_process.exec> method runs a command in a shell/console and buffers the output.
+		**spawn** – <child_process.spawn> launches a new process with a given command.
+		**fork** – <child_process.fork> is a special case of the spawn() method to create child processes.
+	.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+
 
 
 
