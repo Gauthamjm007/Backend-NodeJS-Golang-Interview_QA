@@ -530,8 +530,65 @@
 | --- | --------- |
 |   | **Express JS** |
 | 1 | [What is ExpressJS?](#what-is-expressjs)|
+| 2 | [What are some of the salient features of express?](#what-are-some-of-the-salient-features-of-express)|
+| 3 | [Explain with an example a working of a simple express app?](#explain-with-an-example-a-working-of-a-simple-express-app)|
+| 4 | [Mention few properties of request parameter in express?](#mention-few-properties-of-request-parameter-in-express)|
+| 1 | [What is ExpressJS?](#what-is-expressjs)|
+| 1 | [What is ExpressJS?](#what-is-expressjs)|
+| 1 | [What is ExpressJS?](#what-is-expressjs)|
+| 1 | [What is ExpressJS?](#what-is-expressjs)|
+| 1 | [What is ExpressJS?](#what-is-expressjs)|
+| 1 | [What is ExpressJS?](#what-is-expressjs)|
+
+## Express Js
+
+1. ### What is ExpressJS?
+
+   Fast, unopinionated, minimalist web framework for Node.js,Express is a project of the Node.js Foundation.it is open source and click [here](https://github.com/expressjs/express/) to view,it is mainly used for  building networking services (web applications) and applications,it is builds on top of node js features to provide easy to use functionality that satisfy the needs for building web applications.it has lots of pre-built packages and also many framework are built on top of it like <br/>
+   **Feathers**: Build prototypes in minutes and production ready real-time apps in days<br/>
+   **NestJs**: A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications on top of TypeScript & JavaScript (ES6, ES7, ES8)<br/>
+   **Sails**: MVC framework for Node.js for building practical, production-ready apps.<br/>
+
+**[⬆ Back to Top](#table-of-contents)**
+
+2. ### What are some of the salient features of express? 
+	
+	
+    **Middlewares**: Set up middlewares in order to respond to HTTP/RESTful Requests.<br/>
+    **Routing**: It is possible to defines a routing table in order to perform different HTTP operations.<br/>
+    **Templates**: Dynamically renders HTML Pages based on passing arguments to templates.<br/>
+    **High Performance**: Express prepare a thin layer, therefore, the performance is adequate.<br/>
+    **Database Support**: Express supports RDBMS as well as NoSQL databases.<br/>
+    **MVC Support**: Organize the web application into an MVC architecture.
+    **Manages everything from routes** to rendering view and preforming HTTP request.<br/>
 
 
+**[⬆ Back to Top](#table-of-contents)**
+
+3. ### Explain with an example a working of a simple express app ? 
+	
+	I have given you the code, you explain , don't expect me to do all the stuff
+	
+	```
+    const express = require('express')
+	const port = 3000
+	const app = express()
+	app.get('/', function(req, res) {
+      res.send('Hello World!')
+	})
+	app.listen(port, function(){ 
+      console.log('listening on port',port)
+	})
+	```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+4. ### Mention few properties of request parameter in express ? 
+	
+	here is a list of few req methods needed for you to knows
+	[](./img/express_req_methods.png)
+
+**[⬆ Back to Top](#table-of-contents)**
 
 
 

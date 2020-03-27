@@ -8,4 +8,4 @@ function hashing(str) {
   );
 }
 
-console.log(hashing("How can we take advantage of multi-core system in Nodejs as nodejs works on single thread"));
+console.log(hashing("Mention few properties of request parameter in express "));
