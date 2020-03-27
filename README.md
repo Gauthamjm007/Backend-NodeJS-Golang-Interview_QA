@@ -44,8 +44,11 @@
 | 36| [Which are the areas where it is suitable to use NodeJS?](#which-are-the-areas-where-it-is-suitable-to-use-nodejs) |
 | 37| [Which are the areas where it is not suitable to use NodeJS?](#which-are-the-areas-where-it-is-not-suitable-to-use-nodejs) |
 | 38| [What Are The Key Features Of NodeJs?](#what-are-the-key-features-of-nodejs) |
+| 39| [Explain REPL In NodeJs?](#explain-repl-in-nodejs) |
+| 40| [Can you write CRUD operations in Node js without using frameworks?](#can-you-write-crud-operations-in-node-js-without-using-frameworks) |
+| 41| [Can You Create HTTP Server In Nodejs Explain The Code Used For It?](#can-you-create-http-server-in-nodejs-explain-the-code-used-for-it) |
 
-
+ Explain REPL In Node.Js? 
 ## Node Js
 
 1. ### What is NodeJS?
@@ -416,6 +419,67 @@
 .
 
 **[⬆ Back to Top](#table-of-contents)**
+
+39. ###	Explain REPL In NodeJs?
+
+    
+    The REPL stands for “Read Eval Print Loop”. It is a simple program that accepts the commands, evaluates them, and finally prints the results. REPL provides an environment similar to that of Unix/Linux shell or a window console, in which we can enter the command and the system, in turn, responds with the output. REPL performs the following tasks.<br/>
+
+    **READ** - It Reads the input from the user, parses it into JavaScript data structure and then stores it in the memory.<br/>
+    **EVAL** - It Executes the data structure.<br/>
+    **PRINT** - It Prints the result obtained after evaluating the command.<br/>
+    **LOOP** - It Loops the above command until the user presses Ctrl+C two times.<br/>
+
+.
+
+**[⬆ Back to Top](#table-of-contents)**?
+
+
+40. ###	Can you write CRUD operations in Node js without using frameworks?
+
+    
+    Yes,we can use inbuilt http library for that , here is a simple code for the same:
+	```
+	var http = require('http');//create a server object:
+	http.createServer(function (req, res) {
+	res.writeHead(200, {'Content-Type': 'text/html'}); // http headervar 	url = req.url;
+	if(url ==='/about'){
+		res.write('<h1>about us page<h1>'); //write a response
+		res.end(); //end the response
+	}else if(url ==='/contact'){
+		res.write('<h1>contact us page<h1>'); //write a response
+		res.end(); //end the response
+	}else{
+		res.write('<h1>Hello World!<h1>'); //write a response
+		res.end(); //end the response
+	}}).listen(3000, function(){
+	console.log("server start at port 3000"); //the server object listens on port 3000
+	});
+	```
+
+.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+41. ###	Can You Create HTTP Server In Nodejs Explain The Code Used For It?
+
+    
+    Yes, we can create HTTP Server in Node.js. We can use the <http-server> command to do so.
+
+	Following is the sample code.<br/>
+	```
+	const http = require('http');
+	const server = http.createServer(function (request, response){ 
+		response.writeHead(200, {'Content-Type': 'text/plain'}); 
+		response.end('Welcome Viewers\n'); 
+	});
+	server.listen(8080); // The port where you want to start with.
+	```
+
+.
+
+**[⬆ Back to Top](#table-of-contents)**?
+
 
 
 
