@@ -914,6 +914,7 @@
 | --- | --------- |
 |   | **MongoDB and Mongoose** |
 | 1 | [What is MongoDB?](#what-is-mongodb)|
+| 2 | [What are the difference between NoSQL and SQL](#what-are-the-difference-between-nosql-and-sql)|
 
 1. ### What is MongoDB?
 
@@ -921,6 +922,31 @@
    MongoDB is written in C++<br/>
    
    MongoDB is known to be used by the City of Chicago, Codecademy, Google Search, Foursquare, IBM, Orange S.A., The Gap, Inc., Uber, Coinbase, Sega, Barclays, HSBC, eBay, Cisco, Bosch and Urban Outfitters
+
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+2. ### What are the difference between NoSQL and SQL?
+
+   | Parameter | SQL | NOSQL |
+   | --------- | --- | ----- |
+   |Definition |SQL databases are primarily called RDBMS or Relational Databases |NoSQL databases are primarily called as Non-relational or distributed database |
+   |Query Language|Structured query language (SQL) |No declarative query language |
+   |Type |	SQL databases are table based databases |NoSQL databases can be document based, key-value pairs, graph databases |
+   |Schema |SQL databases have a predefined schema |NoSQL databases use dynamic schema for unstructured data. |
+   |Ability to scale |SQL databases are vertically scalable |NoSQL databases are horizontally scalable |
+   |Examples|Oracle, Postgres, and MS-SQL. |	MongoDB, Redis, Neo4j, Cassandra, Hbase.|
+   |Best suited for |An ideal choice for the complex query intensive environment. |It is not good fit complex queries. |
+   |Hierarchical data storage |SQL databases are not suitable for hierarchical data storage.|More suitable for the hierarchical data store as it supports key-value pair method |
+   |Variations|	One type with minor variations|Many different types which include key-value stores, document databases, and graph databases|
+   |Consistency |It should be configured for strong consistency. |It depends on DBMS as some offers strong consistency like MongoDB, whereas others offer only offers eventual consistency, like Cassandra. |
+   |Hardware|Specialized DB hardware (Oracle Exadata, etc.)|Commodity hardware |
+   |Network |Highly available network (Infiniband, Fabric Path, etc.) |Commodity network (Ethernet, etc.) |
+   |Best features |Cross-platform support, Secure and free |Easy to use, High performance, and Flexible tool. |
+   |Top Companies Using |Hootsuite, CircleCI, Gauges |Airbnb, Uber, Kickstarter |
+   |ACID vs. BASE Mode|ACID( Atomicity, Consistency, Isolation, and Durability) is a standard for RDBMS |Base ( Basically Available, Soft state, Eventually Consistent) is a model of many NoSQL systems |
+   |Average salary|₹ 5,58,704 per year|₹ 6,04,959 per year|
+   
+   
 
 **[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
 
