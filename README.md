@@ -550,6 +550,9 @@
 | 18 | [How to use the Response.cookie() method to manipulate your cookies?](#how-to-use-the-response-cookie-()-method-to-manipulate-your-cookies)|
 | 19 | [How to manage sessions using express?](#how-to-manage-sessions-using-express)|
 | 20 | [How to provide file download using express?](#how-to-provide-file-download-using-express)|
+| 21 | [How To Allow Cors In Expressjs  Explain With An Example?](#how-to-allow-cors-in-expressjs--explain-with-an-example)|
+
+ How To Allow Cors In Expressjs? Explain With An Example?
 
 
 ## Express Js
@@ -902,6 +905,31 @@
 	//...
 	res.end()
 	})
+	```
+
+	
+**[⬆ Back to Top](#table-of-contents---express-js)**
+
+21. ###   How To Allow Cors In Expressjs  Explain With An Example? 
+	
+	
+	In order to allow CORS in Express.js,  add the following code in server.js:
+	```
+	app.all('*', function(req, res, next) {
+	res.set('Access-Control-Allow-Origin', '*');
+	res.set('Access-Control-Allow-Methods', 'GET, POST, DELETE, PUT');
+	res.set('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type');
+	if ('OPTIONS' == req.method) return res.send(200);
+	next();
+	});
+	```
+	or you can install a package called cors ,CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.[link](https://www.npmjs.com/package/cors)
+	```
+	var express = require('express')
+	var cors = require('cors')
+	var app = express()
+ 
+	app.use(cors())
 	```
 
 	
