@@ -915,6 +915,13 @@
 |   | **MongoDB and Mongoose** |
 | 1 | [What is MongoDB?](#what-is-mongodb)|
 | 2 | [What are the difference between NoSQL and SQL](#what-are-the-difference-between-nosql-and-sql)|
+| 3 | [How to establish MongoDB database connection in a node application?](#how-to-establish-mongodb-database-connection-in-a-node-application)|
+| 4 | [What are virtual property in mongoose](#what-are-virtual-property-in-mongoose)|
+| 5 | [How can we add or create our own instance methods in mongoose](#how-can-we-add-or-create-our-own-instance-methods-in-mongoose)|
+| 6 | [How can we add or create our own static methods in mongoose](#how-can-we-add-or-create-our-own-static-methods-in-mongoose)|
+| 7 | [What are the mongoose middlewares?](#what-are-the-mongoose-middlewares)|
+| 8 | [How to query data using mongoose?](#how-to-query-data-using-mongoose)|
+| 9 | [What is Population in mongoose](#what-is-population-in-mongoose)|
 
 1. ### What is MongoDB?
 
@@ -950,7 +957,151 @@
 
 **[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
 
+3. ### How to establish MongoDB database connection in a node application?
 
+	**Database Connection**
+	Create a file ./config/database.js under the project root.
+
+	Database Connection
+
+	Next, we will add code that connects to the database.
+
+	in database.js file 
+	```
+	const mongoose = require('mongoose');
+	const server = '127.0.0.1:27017'; // REPLACE WITH YOUR DB SERVER
+	const database = 'fcc-Mail';      // REPLACE WITH YOUR DB NAME
+
+     mongoose.connect(`mongodb://${server}/${database}`)
+       .then(() => {
+         console.log('Database connection successful')
+       })
+       .catch(err => {
+         console.error('Database connection error')
+       })
+ 
+	module.exports = { mongoose } 
+	```
+	**MongoDB Atlas**
+	sign up to mongosb atlas and it will help you make a connection by url, having a secret key and password
+
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+
+4. ### What are virtual property in mongoose?
+
+  A virtual property is not persisted to the database. We can add it to our schema as a helper to get and set values.but it wont store in database
+  
+  ```
+	userSchema.virtual('fullName').get(function() {
+	return this.firstName + ' ' + this.lastName
+	})
+	
+	userSchema.virtual('fullName').set(function(name) {
+	let str = name.split(' ')
+  
+	this.firstName = str[0]
+	this.lastName = str[1]
+	})
+	
+	const user = new User()
+	user.fullName = 'Thomas Anderson'
+	console.log(user.toJSON())  // Output model fields as JSON
+	console.log()
+	console.log(user.fullName)  // Output the full name
+	//The code above will output the following:
+
+	{ _id: 5a7a4248550ebb9fafd898cf,
+		firstName: 'Thomas',
+		lastName: 'Anderson' }
+	//Thomas Anderson
+  ```
+
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+
+5. ### How can we add or create our own instance methods in mongoose?
+
+   We can create custom helper methods on the schema and access them via the model instance. These methods will have access to the model object and they can be used quite creatively
+   
+   ```
+	userSchema.methods.details = function() {
+	return this.username + ' - ' +  this.email
+	}
+	//This method will be accessible via a model instance:
+	const user = new User({
+	username: 'user2',
+	email: 'user2@gmail.com'
+	})
+	```
+
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+
+6. ### How can we add or create our own static methods in mongoose?
+
+  Similar to instance methods, we can create static methods on the schema. Let’s create a method to retrieve all users in the database:
+  ```
+  userSchema.statics.getUsers = function() {
+  return new Promise((resolve, reject) => {
+    this.find((err, docs) => {
+      if(err) {
+        console.error(err)
+        return reject(err)
+      }
+      resolve(docs)
+			})
+		})
+	}
+  ```
+
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+7. ### What are the mongoose middlewares?
+
+   Middleware are functions that run at specific stages of a pipeline. Mongoose supports middleware for the following operations:<br/>
+
+	Aggregate<br/>
+	Document<br/>
+	Model<br/>
+	Query<br/>
+
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+8. ### How to query data using mongoose?
+
+   Mongoose has a very rich API that handles many complex operations supported by MongoDB. Consider a query where we can incrementally build query components.<br/>
+
+	In this example, we are going to:<br/>
+
+	Find all users<br/>
+	Skip the first 100 records<br/>
+	Limit the results to 10 records<br/>
+	Sort the results by the firstName field<br/>
+	Select the firstName<br/>
+	Execute that query<br/>
+	```
+	User.find()                   // find all users
+         .skip(100)                // skip the first 100 items
+         .limit(10)                // limit to 10 items
+         .sort({firstName: 1}      // sort ascending by firstName
+         .select({firstName: true} // select firstName only
+         .exec()                   // execute the query
+         .then(docs => {
+            console.log(docs)
+          })
+         .catch(err => {
+            console.error(err)
+          })
+	```
+
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+9. ### What is Population in mongoose?
+
+  Population is the process of automatically replacing the specified paths in the document with document(s) from other collection(s). We may populate a single document, multiple documents, plain object, multiple plain objects, or all objects returned from a query.
+
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
 
 
 
