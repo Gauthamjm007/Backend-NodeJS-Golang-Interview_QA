@@ -2,7 +2,8 @@
 
 > Click :star:if you like the project. Pull Request are highly appreciated.<br/>
 [Node JS](#table-of-contents---node-js)<br/>
-[Express JS](#table-of-contents---express-js)
+[Express JS](#table-of-contents---express-js)<br/>
+[MongoDB and Mongoose](#table-of-contents---mongodb-and-mongoose)
 
 ### Table of Contents - Node JS
 
@@ -906,6 +907,22 @@
 	
 **[⬆ Back to Top](#table-of-contents---express-js)**
 
+
+### Table of Contents - MongoDB and Mongoose
+
+| No. | Questions |
+| --- | --------- |
+|   | **MongoDB and Mongoose** |
+| 1 | [What is MongoDB?](#what-is-mongodb)|
+
+1. ### What is MongoDB?
+
+   MongoDB is a cross-platform, document oriented database that provides, high performance, high availability, and easy scalability.Classified as a NoSQL database program, MongoDB uses JSON-like documents with schema.<br/>
+   MongoDB is written in C++<br/>
+   
+   MongoDB is known to be used by the City of Chicago, Codecademy, Google Search, Foursquare, IBM, Orange S.A., The Gap, Inc., Uber, Coinbase, Sega, Barclays, HSBC, eBay, Cisco, Bosch and Urban Outfitters
+
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
 
 
 
