@@ -1148,7 +1148,7 @@
 
   Hashing is the process of converting an input of any length into a fixed size string of text, using a mathematical function.
   ![hashing](https://miro.medium.com/max/4000/0*Zkd2fcKuVGirbNpl.png)
-  When the user provides a input is will be converted to a value of fixed length by a hashing function and the resulting value will be called as hashed text, and it should be always unique for different value
+  When the user provides a input it will be converted to a value of fixed length by a hashing function and the resulting value will be called as hashed text, and it should be always unique for different value
   
 **[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
 
