@@ -951,6 +951,10 @@
 | 8 | [How to query data using mongoose?](#how-to-query-data-using-mongoose)|
 | 9 | [What is Population in mongoose](#what-is-population-in-mongoose)|
 | 10| [What is Datamasking?](#what-is-datamasking)|
+| 11| [What is hashing and explain how it works?](#what-is-hashing-and-explain-how-it-works)|
+| 12| [What are salts and why are they so important?](#what-is-hashing-and-explain-how-it-works)|
+| 11| [What is hashing and explain how it works?](#what-is-hashing-and-explain-how-it-works)|
+| 11| [What is hashing and explain how it works?](#what-is-hashing-and-explain-how-it-works)|
 
 1. ### What is MongoDB?
 
@@ -1138,6 +1142,20 @@
   you can simply use **$project** to hide the mobile field<br/>
   Or perhaps you have an extra field in your document to indicate whether the information is public or not, i.e. given documents<br/>
 
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+11. ### What is hashing and explain how it works?
+
+  Hashing is the process of converting an input of any length into a fixed size string of text, using a mathematical function.
+  ![hashing](https://miro.medium.com/max/4000/0*Zkd2fcKuVGirbNpl.png)
+  When the user provides a input is will be converted to a value of fixed length by a hashing function and the resulting value will be called as hashed text, and it should be always unique for different value
+  
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+12. ### What are salts and why are they so important?
+
+  It's a unique value that can be added to the end of the password to create a different hash value. This adds a layer of security to the hashing process, specifically against brute force attacks(Trying all possible combintaion of password) and also against rainbow table(a table containing all common hashed text and their respective passwords)<br/>
+  
 **[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
 
 
