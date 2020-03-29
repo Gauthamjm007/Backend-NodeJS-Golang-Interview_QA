@@ -950,6 +950,7 @@
 | 7 | [What are the mongoose middlewares?](#what-are-the-mongoose-middlewares)|
 | 8 | [How to query data using mongoose?](#how-to-query-data-using-mongoose)|
 | 9 | [What is Population in mongoose](#what-is-population-in-mongoose)|
+| 10| [What is Datamasking?](#what-is-datamasking)|
 
 1. ### What is MongoDB?
 
@@ -1128,6 +1129,14 @@
 9. ### What is Population in mongoose?
 
   Population is the process of automatically replacing the specified paths in the document with document(s) from other collection(s). We may populate a single document, multiple documents, plain object, multiple plain objects, or all objects returned from a query.
+
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+10. ### What is Datamasking?
+
+  Data masking is a method of creating a structurally similar but inauthentic version of an organization's data that can be used for purposes such as software testing and user training. The purpose is to protect the actual data while having a functional substitute for occasions when the real data is not required.<br/>
+  you can simply use **$project** to hide the mobile field<br/>
+  Or perhaps you have an extra field in your document to indicate whether the information is public or not, i.e. given documents<br/>
 
 **[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
 
