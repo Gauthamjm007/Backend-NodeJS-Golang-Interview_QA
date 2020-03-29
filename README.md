@@ -952,8 +952,8 @@
 | 9 | [What is Population in mongoose](#what-is-population-in-mongoose)|
 | 10| [What is Datamasking?](#what-is-datamasking)|
 | 11| [What is hashing and explain how it works?](#what-is-hashing-and-explain-how-it-works)|
-| 12| [What are salts and why are they so important?](#what-is-hashing-and-explain-how-it-works)|
-| 13| [What are pepper and why are they so important?](#what-is-hashing-and-explain-how-it-works)|
+| 12| [What are salts and why are they so important?](#what-are-salts-and-why-are-they-so-important)|
+| 13| [What are pepper and why are they so important?](#what-are-pepper-and-why-are-they-so-important)|
 | 14| [What are JWT?](#what-are-jwt)|
 
 1. ### What is MongoDB?
