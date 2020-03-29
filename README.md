@@ -953,8 +953,8 @@
 | 10| [What is Datamasking?](#what-is-datamasking)|
 | 11| [What is hashing and explain how it works?](#what-is-hashing-and-explain-how-it-works)|
 | 12| [What are salts and why are they so important?](#what-is-hashing-and-explain-how-it-works)|
-| 11| [What is hashing and explain how it works?](#what-is-hashing-and-explain-how-it-works)|
-| 11| [What is hashing and explain how it works?](#what-is-hashing-and-explain-how-it-works)|
+| 13| [What are pepper and why are they so important?](#what-is-hashing-and-explain-how-it-works)|
+| 14| [What are JWT?](#what-are-jwt)|
 
 1. ### What is MongoDB?
 
@@ -1154,9 +1154,32 @@
 
 12. ### What are salts and why are they so important?
 
-  It's a unique value that can be added to the end of the password to create a different hash value. This adds a layer of security to the hashing process, specifically against brute force attacks(Trying all possible combintaion of password) and also against rainbow table(a table containing all common hashed text and their respective passwords)<br/>
+  It's a unique value that can be added to the end of the password to create a different hash value. This adds a layer of security to the hashing process<br/>
+  They are so important as they prevent **brute force attacks**(Trying all possible combintaion of password) and also against **rainbow table**(a table containing all common hashed text and their respective passwords)<br/>
   
 **[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
 
+13. ### What are pepper and why are they so important?
+
+	A pepper is a secret added to an input such as a password prior to being hashed with a cryptographic hash function<br/>
+	A pepper performs a comparable role to a salt, but while a salt is not secret (merely unique) and can be stored alongside the hashed output<br/> A pepper is secret and must not be stored with the output. The hash and salt are usually stored in a database, but a pepper must be stored separately (e.g. in a configuration file) to prevent it from being obtained by the attacker in case of a database breach. <br/> Where the salt only has to be long enough to be unique, a pepper has to be secure to remain secret (at least 112 bits is recommended by NIST), otherwise an attacker only needs one known entry to crack the pepper.<br/> Finally, the pepper must be generated anew for every application it is deployed in, otherwise a breach of one application would result in lowered security of another application.
 
 
+  
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+14. ### What are JWT?
+
+	JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object<br/>
+	some scenarios where JSON Web Tokens are useful:<br/>
+	**Authorization**: This is the most common scenario for using JWT. Once the user is logged in, each subsequent request will include the JWT, allowing the user to access routes, services, and resources that are permitted with that token. Single Sign On is a feature that widely uses JWT nowadays, because of its small overhead and its ability to be easily used across different domains.<br/>
+
+	**Information Exchange**: JSON Web Tokens are a good way of securely transmitting information between parties. Because JWTs can be signed—for example, using public/private key pairs—you can be sure the senders are who they say they are. Additionally, as the signature is calculated using the header and the payload, you can also verify that the content hasn't been tampered with.<br/>
+	
+	![jwt](https://research.securitum.com/wp-content/uploads/sites/2/2019/10/jwt_ng1_en.png)
+
+
+  
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+ 
