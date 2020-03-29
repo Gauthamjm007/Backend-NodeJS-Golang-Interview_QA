@@ -9,4 +9,6 @@ function hashing(str) {
   );
 }
 
-console.log(hashing("How to provide file download using express"));
+console.log(
+  hashing("How To Allow Cors In Expressjs  Explain With An Example")
+);
