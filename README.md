@@ -957,6 +957,7 @@
 | 13| [What are pepper and why are they so important?](#what-are-pepper-and-why-are-they-so-important)|
 | 14| [What are JWT?](#what-are-jwt)|
 | 15| [What are different authentication methods?](#what-are-different-authentication-methods)|
+| 16| [What are disadvantages of using session based authentication?](#what-are-disadvantages-of-using-session-based-authentication)|
 
 1. ### What is MongoDB?
 
@@ -1191,6 +1192,19 @@
     Use **API keys** if you expect developers to build internal applications that don’t need to access more than a single user’s data.<br/>
     Use **OAuth** access tokens if you want users to easily provide authorization to applications without needing to share private data or dig through developer documentation.<br/>
 	Use **session cookies**, here server is responsible for creating a session for the particular user when the user log's in, after that the id of the session is stored in a cookie on the user browser. For every request sent by the user, the cookie will be sent too, where the server can compare the session id from the cookie with the session information stored on the server so the user identity is verified.
+  
+
+
+
+  
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+
+15. ### What are disadvantages of using session based authentication?
+
+	
+
+    Since data in session state is stored in server memory, it is not advisable to use session state when working with large sum of data. Session state variable stays in memory until you destroy it, so too many variables in the memory effect performance. 
   
 
 
