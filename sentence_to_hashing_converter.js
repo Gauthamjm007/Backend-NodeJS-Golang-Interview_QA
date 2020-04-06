@@ -9,6 +9,4 @@ function hashing(str) {
   );
 }
 
-console.log(
-  hashing("How To Allow Cors In Expressjs  Explain With An Example")
-);
+console.log(hashing("What are JWT"));
