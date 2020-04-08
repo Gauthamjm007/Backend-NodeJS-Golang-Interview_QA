@@ -958,6 +958,7 @@
 | 14| [What are JWT?](#what-are-jwt)|
 | 15| [What are different authentication methods?](#what-are-different-authentication-methods)|
 | 16| [What are disadvantages of using session based authentication?](#what-are-disadvantages-of-using-session-based-authentication)|
+| 17| [What are disadvantages of using jwt based authentication?](#what-are-disadvantages-of-using-jwt-based-authentication)|
 
 1. ### What is MongoDB?
 
@@ -1200,17 +1201,30 @@
 **[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
 
 
-15. ### What are disadvantages of using session based authentication?
+16. ### What are disadvantages of using session based authentication?
 
 	
 
-    Since data in session state is stored in server memory, it is not advisable to use session state when working with large sum of data. Session state variable stays in memory until you destroy it, so too many variables in the memory effect performance. 
-  
+   **Compromised Secret Key** : The best and the worst thing about JWT is that it relies on just one Key. Consider that the Key is leaked by a careless or a rogue developer/administrator, the whole system is compromised!<br/>
+  **Cannot manage client from the server**<br/>**Cannot push Messages to clients** <br/>**Crypto-algo can be deprecated**<br/>**Data Overhead** : The size of the JWT token will be more than that of a normal Session token<br/>Complicated to understand: JWT uses cryptographic Signature algorithms to verify the data and get the user-id from the token. Understanding the Signing Algo in itself requires basics of cryptography. <br/>
 
 
 
   
 **[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+
+16. ### What are disadvantages of using jwt based authentication?
+
+	
+
+   **Session based authentication**:<br/> Because the sessions are stored in the server’s memory, scaling becomes an issue when there is a huge number of users using the system at once.<br/>Cookies normally work on a single domain or subdomains and they are normally disabled by browser if they work cross-domain (3rd party cookies). It poses issues when APIs are served from a different domain to mobile and web devices.
+
+
+
+  
+**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
 
 
  
