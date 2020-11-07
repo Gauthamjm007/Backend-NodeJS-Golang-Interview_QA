@@ -17,7 +17,7 @@
 | 3 | [When are background or worker processes useful?](#when-are-background-or-worker-processes-useful)|        
 | 4 | [Why is NodeJS Single threaded?](#why-is-nodejs-single-threaded)|                                                                          
 | 5 | [Name the types of API functions in Node?](#name-the-types-of-api-functions-in-node)|                                                          
-| 6 | [Explain chaining in Nodejs?](#explain-chaining-in-nodejs)|                                                                                
+| 6 | [Explain chaining in Nodejs?](#explain-chaining-in-nodejs)|
 | 7 | [What are streams in Nodejs Explain the different types of streams present in Nodejs?](#what-are-streams-in-nodejs-explain-the-different-types-of-streams-present-in-nodejs) |
 | 8 | [What is package json?](#what-is-package-json)|                                                                                                       | | 9 | [Explain the purpose of module exports?](#explain-the-purpose-of-module-exports)|                                                           
 | 10| [List down the major security implementations within Node.js?](#list-down-the-major-security-implementations-within-nodejs)|                         
@@ -1225,6 +1225,49 @@
 
   
 **[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+
+### Table of Contents - Golang
+
+
+| No. | Questions |
+| --- | --------- |
+|   | **Node JS** |
+| 1 | [Who invented Golang?](#who-invented-golang)
+| 2 | [What are the major features of Golang?](#what-are-the-major-features-of-golang)
+| 3 | [Which Type of Applications are more suited to be built with Golang?](#which-type-of-applications-are-more-suited-to-be-built-with-golang)
+| 4 | [What are the limitations of Golang ?](#what-are-the-limitations-of-golang)
+| 5 | [Name any few popular libraries in Golang ?](#name-any-few-popular-libraries-in-golang)
+
+
+
+
+1. ### Who invented Golang?
+
+   Go was developed by **Robert Griesemer**, **Rob Pike**, and **Ken Thompson** at Google in 2007 and open sourced in 2009.
+
+2.  ### What are the major features of Golang?
+
+	* Static Typing and Run time efficient ( like C++)
+	* Readability and Usability ( like python and JS )
+	* High performance networking and multi processing
+
+
+3.  ### Where to use Golang ?
+	* **Distributed network services :** API , Web server and framework for web applications
+	* **Cloud-native development :** Go’s concurrency and networking features, and its high degree of portability makes it more easy to build Cloud native applications , Ex: Docker and Kubernetes
+	* **Utilities and stand-alone tools**
+
+
+4.  ### What are the limitations of Golang ?
+	* No Support for generics
+	* Generated binaries are of large size (Example a hello world program has a size of 1.5Mb)
+	* No manual memory management
+	* The dependency management nightmare
+
+
+5. ### Name any few popular libraries in Golang ?
+	Martini , Gin Gonic , Beego , Buffalo ,Gorilla and Mango
+
 
 
 
