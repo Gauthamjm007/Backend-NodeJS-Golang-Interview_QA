@@ -62,13 +62,13 @@
 
    Node.js is an open-source, cross-platform, **JavaScript runtime environment that executes JavaScript code outside of a browser**. Node JS was created by [Ryan Dahl](https://github.com/ry), Ryan Dahl is a software engineer and the original developer of the Node.js JavaScript runtime.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 2. ### How can you avoid callback hells?
 
    There are lots of ways to solve the issue of callback hells: <br /> 1.modularization: break callbacks into independent functions, <br /> 2.use a control flow library, like async. <br /> 3.use generators with Promises, <br /> 4.use async/await (note that it is only available in the latest v7 release and not in the LTS version
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 3. ### When are background or worker processes useful?
 
@@ -76,26 +76,26 @@
    <br/>
    There are lots of options for this like RabbitMQ or Kafka.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 4. ### Why is NodeJS Single threaded?
 
    Node.js is single-threaded for async processing. By doing async processing on a single-thread under typical web loads, more performance and scalability can be achieved as opposed to the typical thread-based implementation.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 5. ### Name the types of API functions in Node?
 
    There are two types of functions in Node.js. <br/>
    1.Blocking functions - In a blocking operation, all other code is blocked from executing until an I/O event that is being waited on occurs. Blocking functions execute synchronously. <br/>2.Non-blocking functions - In a non-blocking operation, multiple I/O calls can be performed without the execution of the program being halted. Non-blocking functions execute asynchronously.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 6. ### Explain chaining in Nodejs?
 
    Chaining is a mechanism whereby the output of one stream is connected to another stream creating a chain of multiple stream operations.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 7. ### What are streams in Nodejs Explain the different types of streams present in Nodejs?
 
@@ -106,31 +106,31 @@
    <Duplex> to facilitate both read and write operations.<br/>
    <Transform> is a form of Duplex stream that performs computations based on the available input.<br/>
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 8. ### What is package json?
 
    The package.json file in Node.js is the heart of the entire application. It is basically the manifest file that contains the metadata of the project where we define the properties of a package.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 9. ### Explain the purpose of module exports?
 
    A module in Node.js is used to encapsulate all the related codes into a single unit of code which can be interpreted by shifting all related functions into a single file
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 10. ### List down the major security implementations within Nodejs?
 
     Major security implementations in Node.js are:Authentications,Error Handling
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 11. ### Explain the concept of URL module?
 
     The URL module splits up a web address into readable parts
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 12. ### Explain the concept of middleware in Nodejs?
 
@@ -141,7 +141,7 @@
     Finish the request-response cycle<br/>
     Invoke the next middleware in the stack
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 13. ### Explain libuv?
 
@@ -153,37 +153,37 @@
     Asynchronous TCP & UDP sockets<br/>
     Child processes
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 14. ### List down the two arguments that async.queue takes as input?
 
     Below are the two arguments that async.queue takes as input - Task Function & Concurrency Value
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 15. ### Differentiate between spawn and fork methods in Nodejs?
 
     In Node.js, the spawn() is used to launch a new process with the provided set of commands. This method doesn’t create a new V8 instance and just one copy of the node module is active on the processor. When your child process returns a large amount of data to the Node you can invoke this method.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 16. ### Explain the purpose of ExpressJS package?
 
     Express.js is a framework built on top of Node.js that facilitates the management of the flow of data between server and routes in the server-side applications. It is a lightweight and flexible framework that provides a wide range of features required for the web as well as mobile application development. Express.js is developed on the middleware module of Node.js called connect. The connect module further makes use of http module to communicate with Node.js. Thus, if you are working with any of the connect based middleware modules, then you can easily integrate with Express.js.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 17. ### Explain the usage of a buffer class in Nodejs?
 
     Buffer class in Node.js is used for storing the raw data in a similar manner of an array of integers. But it corresponds to a raw memory allocation that is located outside the V8 heap. It is a global class that is easily accessible can be accessed in an application without importing a buffer module. Buffer class is used because pure JavaScript is not compatible with binary data. So, when dealing with TCP streams or the file system, it’s necessary to handle octet streams.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 18. ### How does Nodejs handle the child threads?
 
     In general, Node.js is a single threaded process and doesn’t expose the child threads or thread management methods. But you can still make use of the child threads using spawn() for some specific asynchronous I/O tasks which execute in the background and don’t usually execute any JS code or hinder with the main event loop in the application. If you still want to use the threading concept in your application you have to include a module called ChildProcess explicitly.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 19. ### Explain stream in Nodejs along with its various types?
 
@@ -193,7 +193,7 @@
     Duplex: Used for both the functions; read and write.<br/>
     Transform: It is a duplex stream that is used for modifying the data.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 
 20. ### Describe the exit codes of Nodejs?
@@ -205,7 +205,7 @@
 	*Internal Exception handler Run-time failure<br/>
 	*Internal JavaScript Evaluation Failure<br/>
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 
 21. ### Is cryptography supported in Nodejs?
@@ -220,7 +220,7 @@
 	
 	```
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 
 22. ### Explain the reason as to why Express app and server folder must be kept separate?
@@ -232,14 +232,14 @@
     *Allows deploying the same API under flexible and different network conditions<br/>
 	*Better separation of concerns and cleaner code
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 
 23. ### What is the role of asset module in nodejs?
 
     The assert module provides a set of assertion functions for verifying invariants
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 24. ### What is the role of async_hooks module in nodejs?
 
@@ -248,25 +248,25 @@
 	const async_hooks = require('async_hooks');
 	```
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 25. ### What are buffer objects in nodejs?
 
     In Node.js, Buffer objects are used to represent binary data in the form of a sequence of bytes. Many Node.js APIs, for example streams and file system operations, support Buffers, as interactions with the operating system or other processes generally always happen in terms of binary data
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 26. ### What are the different ways of implementing Addons in NodeJS?
 
     There are three options for implementing Addons: <br/>N-API<br/> nan direct use of internal V8 <br/>  libuv <br/> Node.js libraries
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 27. ### How can we spawn the child process asynchronously without 	blocking the Nodejs event loop?
 
     **child_process.spawn()** method spawns the child process asynchronously, without blocking the Node.js event loop,The child_process. <br/>**spawnSync()**  function provides equivalent functionality in a synchronous manner that blocks the event loop until the spawned process either exits or is terminated
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 28. ### How can we take advantage of multi-core system in Nodejs as nodejs works on single thread?
 
@@ -309,13 +309,13 @@
 	Worker 5644 started
 	```
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 29. ### What is the datatype of console?
 
     The datatype of console is an **object**
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 30. ### Which are the different console methods available?
 
@@ -325,7 +325,7 @@
 	2.**console.error([data][, ...args])** Prints to stderr with newline. Multiple arguments can be passed, with the first used as the primary message and all additional used as substitution<br/>
 	3.**console.table(tabularData[, properties])**  a table with the columns of the properties of tabularData (or use properties) and rows of tabularData and log it.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 31. ### Can node js perform cryptographic functions?
 
@@ -333,7 +333,7 @@
 
 	Use require('crypto') to access this module.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 32. ### How can we read or write files in node js?
 
@@ -347,7 +347,7 @@
 
 
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 33. ### Which are the global objects in Node JS?
 
@@ -372,7 +372,7 @@
 	URLSearchParams<br/>
 	WebAssembly<br/>
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 34. ### How can we perform asynchronous network API in Node JS?
 
@@ -383,7 +383,7 @@
 
 	const net = require('net');
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 35. ###	What are the utilities of OS module in NodeJS?
 
@@ -391,7 +391,7 @@
 
 	const os = require('os');.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 36. ###	Which are the areas where it is suitable to use NodeJS?
 
@@ -403,7 +403,7 @@
     Single Page Applications<br/>
 .
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 
 37. ###	Which are the areas where it is not suitable to use NodeJS?
@@ -412,7 +412,7 @@
 
 	
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 38. ###	What Are The Key Features Of NodeJs?
 
@@ -425,7 +425,7 @@
     **No Buffering** – Node.js applications never buffer any data. They simply output the data in chunks.<br/>
 .
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 39. ###	Explain REPL In NodeJs?
 
@@ -439,7 +439,7 @@
 
 .
 
-**[⬆ Back to Top](#table-of-contents---node-js)**?
+**[⬆  Back to Top ](#table-of-contents---node-js)**?
 
 
 40. ###	Can you write CRUD operations in Node js without using frameworks?
@@ -466,7 +466,7 @@
 
 .
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 42. ###	What Is The Difference Between Nodejs AJAX And JQuery?
 
@@ -487,7 +487,7 @@
 
 .
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 43. ###	What Is EventEmitter In NodeJs?
 
@@ -506,7 +506,7 @@
 	EventEmitter provides multiple properties like “on” and “emit”. The “on” property is used to bind a function to the event and “emit” is used to fire an event.
 .
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 
 44. ###	What Is A Child_process Module In NodeJs?
@@ -523,7 +523,7 @@
 		**fork** – <child_process.fork> is a special case of the spawn() method to create child processes.
 	.
 
-**[⬆ Back to Top](#table-of-contents---node-js)**
+**[⬆  Back to Top ](#table-of-contents---node-js)**
 
 
 ### Table of Contents - Express JS
@@ -566,7 +566,7 @@
    **NestJs**: A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications on top of TypeScript & JavaScript (ES6, ES7, ES8)<br/>
    **Sails**: MVC framework for Node.js for building practical, production-ready apps.<br/>
 
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 2. ### What are some of the salient features of express? 
 	
@@ -580,7 +580,7 @@
     **Manages everything from routes** to rendering view and preforming HTTP request.<br/>
 
 
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 3. ### Explain with an example a working of a simple express app? 
 	
@@ -598,14 +598,14 @@
 	})
 	```
 
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 4. ### Mention few properties of request parameter in express? 
 	
 	here is a list of few req methods needed for you to knows
 	![req methods](/img/express_req_methods.png)
 
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 5. ### How to get the name parameters in express?  
 	
@@ -616,7 +616,7 @@
 	// => "tj"
 	```
 
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 6. ### How to retrieve the get query string parameters using express?   
 	
@@ -627,7 +627,7 @@
 	//req.query.weight - 60
 	```
 
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 7. ### How to send a response back using express?   
 	
@@ -644,7 +644,7 @@
 	}
 	```
 
-**[⬆ Back to Top](#table-of-contents---express-js
+**[⬆  Back to Top ](#table-of-contents---express-js
 
 
 8. ### How to set http response status using express?   
@@ -668,7 +668,7 @@
 	// === res.status(500).send('Internal Server Error')
 	```
 
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 9. ### What are the different http status codes?   
 	
@@ -717,7 +717,7 @@
 	|505  |HTTP Version Not Supported|The server does not support the "http protocol" version|
 	
 
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 10. ### Mention few properties of request parameter in express? 
 	
@@ -732,7 +732,7 @@
 	})
 	```
 	
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 11. ### How can you change http header value of a response? 
 	
@@ -749,7 +749,7 @@
 	// => image/png:
 	```
 	
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 12. ### How to redirect to other pages server-side? 
 	
@@ -760,7 +760,7 @@
 	res.redirect(301, '/go-there')
 	```
 	
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 13. ###  How does routing work in express? 
 	
@@ -774,7 +774,7 @@
 	//This creates a route that maps accessing the root domain URL / using the HTTP GET method to the response we want to provide.
 	```
 	
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 14. ###   What are the tasks that a middleware can do? 
 	
@@ -786,7 +786,7 @@
     Call the next middleware function in the stack.<br/>
 
 	
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 15. ###   What are the different types of middleware?
 	
@@ -800,7 +800,7 @@
     Third-party middleware
 
 	
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 16. ###    How to serve static assests from express?
 	
@@ -818,7 +818,7 @@
 	```
 
 	
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 17. ###   How to provide file download using express?
 	
@@ -832,7 +832,7 @@
 	```
 
 	
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 18. ###   How to use the Response.cookie() method to manipulate your cookies?
 	
@@ -864,7 +864,7 @@
 	|sameSite|Value of SameSite|
 
 	
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 19. ###   How to manage sessions using express?
 	
@@ -887,7 +887,7 @@
 	The best choice is a memory cache like Redis, for which you need to setup its own infrastructure.
 
 	
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 20. ###   How to process forms using Express? 
 	
@@ -910,7 +910,7 @@
 	```
 
 	
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 21. ###   How To Allow Cors In Expressjs  Explain With An Example? 
 	
@@ -935,7 +935,7 @@
 	```
 
 	
-**[⬆ Back to Top](#table-of-contents---express-js)**
+**[⬆  Back to Top ](#table-of-contents---express-js)**
 
 
 ### Table of Contents - MongoDB and Mongoose
@@ -968,7 +968,7 @@
    
    MongoDB is known to be used by the City of Chicago, Codecademy, Google Search, Foursquare, IBM, Orange S.A., The Gap, Inc., Uber, Coinbase, Sega, Barclays, HSBC, eBay, Cisco, Bosch and Urban Outfitters
 
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 2. ### What are the difference between NoSQL and SQL?
 
@@ -993,7 +993,7 @@
    
    
 
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 3. ### How to establish MongoDB database connection in a node application?
 
@@ -1023,7 +1023,7 @@
 	**MongoDB Atlas**
 	sign up to mongosb atlas and it will help you make a connection by url, having a secret key and password
 
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 
 4. ### What are virtual property in mongoose?
@@ -1055,7 +1055,7 @@
 	//Thomas Anderson
   ```
 
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 
 5. ### How can we add or create our own instance methods in mongoose?
@@ -1073,7 +1073,7 @@
 	})
 	```
 
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 
 6. ### How can we add or create our own static methods in mongoose?
@@ -1093,7 +1093,7 @@
 	}
   ```
 
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 7. ### What are the mongoose middlewares?
 
@@ -1104,7 +1104,7 @@
 	Model<br/>
 	Query<br/>
 
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 8. ### How to query data using mongoose?
 
@@ -1133,13 +1133,13 @@
           })
 	```
 
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 9. ### What is Population in mongoose?
 
   Population is the process of automatically replacing the specified paths in the document with document(s) from other collection(s). We may populate a single document, multiple documents, plain object, multiple plain objects, or all objects returned from a query.
 
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 10. ### What is Datamasking?
 
@@ -1147,7 +1147,7 @@
   you can simply use **$project** to hide the mobile field<br/>
   Or perhaps you have an extra field in your document to indicate whether the information is public or not, i.e. given documents<br/>
 
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 11. ### What is hashing and explain how it works?
 
@@ -1155,14 +1155,14 @@
   ![hashing](https://miro.medium.com/max/4000/0*Zkd2fcKuVGirbNpl.png)
   When the user provides a input it will be converted to a value of fixed length by a hashing function and the resulting value will be called as hashed text, and it should be always unique for different value
   
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 12. ### What are salts and why are they so important?
 
   It's a unique value that can be added to the end of the password to create a different hash value. This adds a layer of security to the hashing process<br/>
   They are so important as they prevent **brute force attacks**(Trying all possible combintaion of password) and also against **rainbow table**(a table containing all common hashed text and their respective passwords)<br/>
   
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 13. ### What are pepper and why are they so important?
 
@@ -1171,7 +1171,7 @@
 
 
   
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 14. ### What are JWT?
 
@@ -1185,7 +1185,7 @@
 
 
   
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 15. ### What are different authentication methods?
 
@@ -1199,7 +1199,7 @@
 
 
   
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 
 16. ### What are disadvantages of using session based authentication?
@@ -1212,7 +1212,7 @@
 
 
   
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 
 16. ### What are disadvantages of using jwt based authentication?
@@ -1224,7 +1224,7 @@
 
 
   
-**[⬆ Back to Top](#table-of-contents---mongodb-and-mongoose)**
+**[⬆  Back to Top ](#table-of-contents---mongodb-and-mongoose)**
 
 
 
