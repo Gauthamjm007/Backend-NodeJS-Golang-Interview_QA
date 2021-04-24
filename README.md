@@ -1215,7 +1215,7 @@
 **[ Back to Top ⬆ ](#table-of-contents---mongodb-and-mongoose)**
 
 
-16. ### What are disadvantages of using jwt based authentication?
+17. ### What are disadvantages of using jwt based authentication?
 
 	
 
@@ -1228,4 +1228,24 @@
 
 
 
- 
+ ### Table of Contents - Golang
+
+| No. | Questions |
+| --- | --------- |
+|   | **Golang** |
+| 1 | [What is Golang?](#what-is-golang)|
+| 2 | [What are the pros and cons of Golang?](#what-are-the-pros-and-cons-of-golang)|
+| 3 | [What kind of projects are suitable to be built in Golang?](#what-kind-of-projects-are-suitable-to-be-built-in-golang)
+| 4 | [Explain how Golang works in layman terms?](#explain-how-golang-works-in-layman-terms)
+| 5 | [Is Golang an object oriented language?](#is-golang-an-object-oriented-language)
+
+
+
+
+1. ### What is Golang?
+
+
+   Golang is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. Golang was designed at Google in 2007 to improve programming productivity in an era of multicore, networked machines and large codebases.
+
+
+**[ Back to Top ⬆ ](#table-of-contents---golang)**

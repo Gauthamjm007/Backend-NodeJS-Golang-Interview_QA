@@ -9,16 +9,15 @@ Output: "#what-are-jwt"
 this can be used to link questions
 
 */
-
-function hashing(str) {
-  return (
-    '#' +
-    str
-      .trim('')
-      .split(' ')
-      .map((ele) => ele.toLowerCase())
-      .join('-')
-  );
+// | 3 | [What kind of projects are suitable to be built in go?](#what-kind-of-projects-are-suitable-to-be-built-in-go)|
+function hashing(num=0,str) {
+  
+  const hashed =str
+  .trim('')
+  .split(' ')
+  .map((ele) => ele.toLowerCase())
+  .join('-')
+  return `| ${num} | [${str}?](#${hashed})`
 }
 
-console.log(hashing('What are JWT'));
+console.log(hashing(5,'Is Golang an object oriented language'));
