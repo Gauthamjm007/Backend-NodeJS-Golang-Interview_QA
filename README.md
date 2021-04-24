@@ -1249,3 +1249,24 @@
 
 
 **[ Back to Top ⬆ ](#table-of-contents---golang)**
+
+
+2. ### What are the pros and cons of Golang?
+
+	**Pros:**
+	* Ease of use
+    * A Smart Standard library
+    * Strong security built-in
+    * Garbage collected language.
+    * Minimalism & Readability
+    * Concurrency
+
+
+    **Cons:**
+    * No generics
+    * Error-handling boilerplate & lack of compile-time checks unhandled errors
+    * Shortage of high-level parallelism and concurrency features
+
+
+
+**[ Back to Top ⬆ ](#table-of-contents---golang)**
