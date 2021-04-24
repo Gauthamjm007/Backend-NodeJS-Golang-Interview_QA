@@ -1236,8 +1236,7 @@
 | 1 | [What is Golang?](#what-is-golang)|
 | 2 | [What are the pros and cons of Golang?](#what-are-the-pros-and-cons-of-golang)|
 | 3 | [What kind of projects are suitable to be built in Golang?](#what-kind-of-projects-are-suitable-to-be-built-in-golang)
-| 4 | [Explain how Golang works in layman terms?](#explain-how-golang-works-in-layman-terms)
-| 5 | [Is Golang an object oriented language?](#is-golang-an-object-oriented-language)
+| 4 | [Is Golang an object oriented language?](#is-golang-an-object-oriented-language)
 
 
 
@@ -1270,3 +1269,16 @@
 
 
 **[ Back to Top ⬆ ](#table-of-contents---golang)**
+
+
+3. ### What kind of projects are suitable to be built in Golang?
+     * Cloud services 
+     * Media platforms
+     * Broadcast providers
+     * Projects with microservice architecture
+
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**
+
+4. ### Is Golang an object oriented language?
+    
+    Golang has types and methods and allows an object-oriented style of programming, there is no type hierarchy.Golang has some properties of object oriented programming like Encapsulation , Composition , but it doesn't have inheritance , classes , function overloading .
