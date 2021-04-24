@@ -20,4 +20,4 @@ function hashing(num=0,str) {
   return `| ${num} | [${str}?](#${hashed})`
 }
 
-console.log(hashing(5,'Is Golang an object oriented language'));
+console.log(hashing(6,'What are the data types in Golang'));

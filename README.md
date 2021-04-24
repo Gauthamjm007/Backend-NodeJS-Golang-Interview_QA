@@ -1237,6 +1237,7 @@
 | 2 | [What are the pros and cons of Golang?](#what-are-the-pros-and-cons-of-golang)|
 | 3 | [What kind of projects are suitable to be built in Golang?](#what-kind-of-projects-are-suitable-to-be-built-in-golang)
 | 4 | [Is Golang an object oriented language?](#is-golang-an-object-oriented-language)
+| 5 | [What are the data types in Golang?](#what-are-the-data-types-in-golang)
 
 
 
@@ -1282,3 +1283,16 @@
 4. ### Is Golang an object oriented language?
     
     Golang has types and methods and allows an object-oriented style of programming, there is no type hierarchy.Golang has some properties of object oriented programming like Encapsulation , Composition , but it doesn't have inheritance , classes , function overloading .
+
+
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**
+
+5. ### What are the data types in Golang?
+
+    1. **Basic type**: Numbers, strings, and booleans .
+    2. **Aggregate type**: Array and structs .
+    3. **Reference type**: Pointers, slices, maps, functions, and channels .
+    4. **Interface type**
+
+
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**
