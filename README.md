@@ -1240,7 +1240,9 @@
 | 5 | [What are the data types in Golang?](#what-are-the-data-types-in-golang)
 | 6 | [Can you return multiple values from a function?](#can-you-return-multiple-values-from-a-function)
 | 7 | [What is a GOPATH?](#what-is-a-gopath)
-
+| 8 | [What are Goroutines?](#what-are-goroutines)
+| 9 | [What is nil in Go?](#what-is-nil-in-go)
+| 10 | [What is the difference between array and slice in Go?](#what-is-the-difference-between-array-and-slice-in-go)
 
 
 
@@ -1327,5 +1329,31 @@
 
     The GOPATH environment variable specifies the location of your workspace. It defaults to a directory named go inside your home directory    <br/>  
     The command go env GOPATH prints the effective current GOPATH; it prints the default location if the environment variable is unset.          
+
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+8. ### What are Goroutines?
+
+    Goroutines are incredibly lightweight “threads” managed by the go runtime. They enable us to create asynchronous parallel programs that can execute some tasks far quicker than if they were written in a sequential manner.
+
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+9. ### What is nil in Go?
+    nil is a predeclared identifier in Go that represents zero values for pointers, interfaces, channels, maps, slices and function types.
+
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+10. ### What is the difference between array and slice in Go ?
+    
+    * **ARRAY** : An array is a fixed collection of data. The emphasis here is on fixed, because once you set the length of an array, it cannot be changed.<br/>
+   
+    ```go
+	arr := [4]int{3, 2, 5, 4}
+	```
+    * **SLICE** : Slices are much more flexible, powerful, and convenient than arrays. Unlike arrays, slices can be resized using the built-in append function .
+
+    ```go
+	slicee := make([]Type, length, capacity)
+	```
 
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
