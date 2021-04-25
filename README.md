@@ -1,6 +1,6 @@
-# Node JS , Express JS Interview Questions & Answers
+# Backend Interview Questions and Answers related to Node JS ,  Golang , Express JS , MongoDB
 
-> Click :star:if you like the project. Pull Request are highly appreciated.<br/>
+> Click :star: if you like the project. Pull Request are highly appreciated.<br/>
 [Node JS](#table-of-contents---node-js)<br/>
 [Express JS](#table-of-contents---express-js)<br/>
 [MongoDB and Mongoose](#table-of-contents---mongodb-and-mongoose)<br/>
