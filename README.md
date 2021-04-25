@@ -1243,6 +1243,7 @@
 | 8 | [What are Goroutines?](#what-are-goroutines)
 | 9 | [What is nil in Go?](#what-is-nil-in-go)
 | 10 | [What is the difference between array and slice in Go?](#what-is-the-difference-between-array-and-slice-in-go)
+| 11 | [How does a go compiler work?](#how-does-a-go-compiler-work)
 
 
 
@@ -1357,3 +1358,9 @@
 	```
 
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+11. ### How does a go compiler work?
+   
+    A Go compiler goes through the following steps , they are in brief , if we go in detail then you will need a complete book to understand each module, for interview purpose , I have attached a hand written note , I will generate a digital form soon 
+
+    ![go compiler](/img/go_compiler.jpeg)

@@ -20,4 +20,4 @@ function hashing(num=0,str) {
   return `| ${num} | [${str}?](#${hashed})`
 }
 
-console.log(hashing(10,'What is the difference between array and slice in Go'));
+console.log(hashing(11,'How does a go compiler work'));
