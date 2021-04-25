@@ -1,6 +1,6 @@
-# Backend Interview Questions and Answers related to Node JS ,  Golang , Express JS , MongoDB
+# Backend Interview Questions and Answers related to Node JS ,  Golang/Go , Express JS , MongoDB
 
-> Click :star: if you like the project. Pull Request are highly appreciated.<br/>
+> Click :star:   if you like the project. Pull Request are highly appreciated.<br/>
 [Node JS](#table-of-contents---node-js)<br/>
 [Express JS](#table-of-contents---express-js)<br/>
 [MongoDB and Mongoose](#table-of-contents---mongodb-and-mongoose)<br/>
@@ -554,7 +554,7 @@
 | 20 | [How to provide file download using express?](#how-to-provide-file-download-using-express)|
 | 21 | [How To Allow Cors In Expressjs  Explain With An Example?](#how-to-allow-cors-in-expressjs--explain-with-an-example)|
 
- How To Allow Cors In Expressjs? Explain With An Example?
+
 
 
 ## Express Js
@@ -644,7 +644,7 @@
 	}
 	```
 
-**[ Back to Top ⬆ ](#table-of-contents---express-js
+**[ Back to Top ⬆ ](#table-of-contents---express-js)**
 
 
 8. ### How to set http response status using express?   
