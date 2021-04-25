@@ -20,4 +20,4 @@ function hashing(num=0,str) {
   return `| ${num} | [${str}?](#${hashed})`
 }
 
-console.log(hashing(6,'What are the data types in Golang'));
+console.log(hashing(7,'What is a GOPATH'));

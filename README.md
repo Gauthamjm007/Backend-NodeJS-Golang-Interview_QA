@@ -1238,6 +1238,8 @@
 | 3 | [What kind of projects are suitable to be built in Golang?](#what-kind-of-projects-are-suitable-to-be-built-in-golang)
 | 4 | [Is Golang an object oriented language?](#is-golang-an-object-oriented-language)
 | 5 | [What are the data types in Golang?](#what-are-the-data-types-in-golang)
+| 6 | [Can you return multiple values from a function?](#can-you-return-multiple-values-from-a-function)
+| 7 | [What is a GOPATH?](#what-is-a-gopath)
 
 
 
@@ -1296,3 +1298,34 @@
 
 
   **[ Back to Top ⬆ ](#table-of-contents---golang)**
+
+
+6. ### Can you return multiple values from a function?
+
+    Yes. A Go function can return multiple values, each separated by commas in the return statement.
+
+    ```go
+	    package main
+
+        import "fmt"
+        
+        func foo() (string, string) {
+           return "foo", "ball"
+        }
+        
+        func main() {
+           fmt.Println(foo())
+        }
+	```
+
+
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**    
+
+
+7. ### What is a GOPATH?
+
+
+    The GOPATH environment variable specifies the location of your workspace. It defaults to a directory named go inside your home directory    <br/>  
+    The command go env GOPATH prints the effective current GOPATH; it prints the default location if the environment variable is unset.          
+
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
