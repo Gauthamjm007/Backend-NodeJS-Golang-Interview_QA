@@ -20,4 +20,4 @@ function hashing(num=0,str) {
   return `| ${num} | [${str}?](#${hashed})`
 }
 
-console.log(hashing(5,'What are the four Isolation levels?'));
+console.log(hashing(6,'Which isolation levels can prevent problems that occur in read phenomena'));

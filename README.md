@@ -1382,6 +1382,7 @@
 | 3 | [Explain in brief the ACID Model?](#explain-in-brief-the-acid-model)
 | 4 | [What are the read phenomena in Isolation?](#what-are-the-read-phenomena-in-isolation)
 | 5 | [What are the four Isolation levels?](#what-are-the-four-isolation-levels)
+| 6 | [Which isolation levels can prevent problems that occur in read phenomena?](#which-isolation-levels-can-prevent-problems-that-occur-in-read-phenomena)
 
 1. ### What is ACID Model in Database?
    
@@ -1411,3 +1412,22 @@
 
 **[ Back to Top ⬆ ](#table-of-contents---database-engineering)**
 
+5. ### What are the four Isolation levels?
+    * **Read Uncommitted** – Read Uncommitted is the lowest isolation level. In this level, one transaction may read not yet committed changes made by other transaction
+
+    * **Read Committed** – This isolation level guarantees that any data read is committed at the moment it is read. Thus it does not allows dirty read. The transaction holds a read or write lock on the current row, and thus prevent other transactions from reading, updating or deleting it.
+    
+    * **Repeatable Read** - This is the most restrictive isolation level. The transaction holds read locks on all rows it references and writes locks on all rows it inserts, updates, or deletes. Since other transaction cannot read, update or delete these rows, consequently it avoids non-repeatable read.
+
+    * **Serializable** - Transactions are serialized , occur one by one
+
+ **[ Back to Top ⬆ ](#table-of-contents---database-engineering)**
+
+6. ### Which isolation levels can prevent problems that occur in read phenomena?   
+    Refer Image for a comparison  
+
+     ![isolation](/img/acid.png)
+
+
+
+**[ Back to Top ⬆ ](#table-of-contents---database-engineering)**
