@@ -4,6 +4,7 @@
 [Node JS](#table-of-contents---node-js)<br/>
 [Express JS](#table-of-contents---express-js)<br/>
 [MongoDB and Mongoose](#table-of-contents---mongodb-and-mongoose)<br/>
+[Database Engineering](#table-of-contents---database-engineering)<br/>
 [Golang](#table-of-contents---golang)<br/>
 
 
@@ -767,8 +768,9 @@
 	Routing is the process of determining what should happen when a URL is called, or also which parts of the application should handle a specific incoming request.<br/>
 
 	In the Hello World example we used this code<br/>
+
 	```
-	app.get('/', function(req, res) { 
+    app.get('/', function(req, res) { 
      /* */ 
 	})
 	//This creates a route that maps accessing the root domain URL / using the HTTP GET method to the response we want to provide.
@@ -812,7 +814,6 @@
 	const app = express()
 
 	app.use(express.static('public'))
-
 
 	app.listen(3000, () => console.log('Server ready'))
 	```
@@ -1364,3 +1365,49 @@
     A Go compiler goes through the following steps , they are in brief , if we go in detail then you will need a complete book to understand each module, for interview purpose , I have attached a hand written note , I will generate a digital form soon 
 
     ![go compiler](/img/go_compiler.jpeg)
+
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+
+
+
+### Table of Contents - Database Engineering
+
+
+| No. | Questions |
+| --- | --------- |
+|   | **Database Engineering** |
+| 1 | [What is ACID Model in Database?](#what-is-acid-model-in-database)
+| 2 | [What does ACID acronym mean?](#what-does-acid-acronym-mean)
+| 3 | [Explain in brief the ACID Model?](#explain-in-brief-the-acid-model)
+| 4 | [What are the read phenomena in Isolation?](#what-are-the-read-phenomena-in-isolation)
+| 5 | [What are the four Isolation levels?](#what-are-the-four-isolation-levels)
+
+1. ### What is ACID Model in Database?
+   
+    The ACID database transaction model ensures that a performed transaction is always consistent. This makes it a good fit for businesses which deal with online transaction processing (e.g: finance institutions) or online analytical processing (e.g: data warehousing). These organizations need database systems which can handle many small simultaneous transactions. There must be zero tolerance for invalid states
+
+
+**[ Back to Top ⬆ ](#table-of-contents---database-engineering)**
+
+2. ### What does ACID acronym mean?
+    * A - Atomicity
+    * C - Consistency
+    * I - Isolation
+    * D - Durability
+
+3. ### Explain in brief the ACID Model?
+    * **Atomicity**: Each transaction is either properly carried out or the process halts and the database reverts back to the state before the transaction started. This ensures that all data in the database is valid .<br/>
+    * **Consistency**: The database must remain in a consistent state after any transaction. No transaction should have any adverse effect on the data residing in the database , also a DB should have Atomicity and Isolation for this property.<br/>
+    * **Isolation**: Any reads or writes performed on the database should not be impacted by other reads and writes of separate transactions occurring on the same database.<br/>
+    * **Durability**: The database should be durable enough to hold all its latest updates even if the system fails or restarts .
+
+**[ Back to Top ⬆ ](#table-of-contents---database-engineering)**
+
+4. ### What are the read phenomena in Isolation?
+    * **Dirty Read**:A Dirty read is the situation when a transaction reads a data that has not yet been committed .<br/>
+    * **Non Repeatable read**: Non Repeatable read occurs when a transaction reads same row twice, and get a different value each time.<br/>
+    * **Phantom Read**:  Phantom Read occurs when two same queries are executed, but the rows retrieved by the two, are differen i.e a new row might have been inserted or deleted
+
+**[ Back to Top ⬆ ](#table-of-contents---database-engineering)**
+

@@ -20,4 +20,4 @@ function hashing(num=0,str) {
   return `| ${num} | [${str}?](#${hashed})`
 }
 
-console.log(hashing(11,'How does a go compiler work'));
+console.log(hashing(5,'What are the four Isolation levels?'));
