@@ -20,4 +20,4 @@ function hashing(num=0,str) {
   return `| ${num} | [${str}?](#${hashed})`
 }
 
-console.log(hashing(6,'Which isolation levels can prevent problems that occur in read phenomena'));
+console.log(hashing(6,'What does Eventually Consistent Mean'));

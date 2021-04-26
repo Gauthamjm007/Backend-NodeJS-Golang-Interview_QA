@@ -1383,6 +1383,7 @@
 | 4 | [What are the read phenomena in Isolation?](#what-are-the-read-phenomena-in-isolation)
 | 5 | [What are the four Isolation levels?](#what-are-the-four-isolation-levels)
 | 6 | [Which isolation levels can prevent problems that occur in read phenomena?](#which-isolation-levels-can-prevent-problems-that-occur-in-read-phenomena)
+| 7 | [What does Eventually Consistent Mean?](#what-does-eventually-consistent-mean)
 
 1. ### What is ACID Model in Database?
    
@@ -1429,5 +1430,12 @@
      ![isolation](/img/acid.png)
 
 
+
+**[ Back to Top ⬆ ](#table-of-contents---database-engineering)**
+
+
+7. ### What does Eventually Consistent Mean ?
+    
+    **Eventual Consistency** concept is that while a database may have some inconsistencies at any point in time, it will eventually become consistent when all updates cease i.e eventually all nodes will receive the latest consistent updates.
 
 **[ Back to Top ⬆ ](#table-of-contents---database-engineering)**
