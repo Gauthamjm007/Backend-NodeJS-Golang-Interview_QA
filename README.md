@@ -1245,6 +1245,15 @@
 | 9 | [What is nil in Go?](#what-is-nil-in-go)
 | 10 | [What is the difference between array and slice in Go?](#what-is-the-difference-between-array-and-slice-in-go)
 | 11 | [How does a go compiler work?](#how-does-a-go-compiler-work)
+| 12 | [What is an Interface and Why do you use it?](#what-is-an-interface-and-why-do-you-use-it)
+| 13 | [What are concurrency and parralism and what is the difference between both?](#what-are-concurrency-and-parralism-and-what-is-the-difference-between-both)
+| 14 | [What are the difference between goroutines and threads?](#what-are-the-difference-between-goroutines-and-threads)
+| 15 | [What are channels for?](#what-are-channels-for)
+| 16 | [Can you do something in goroutines without channels?](#can-you-do-something-in-goroutines-without-channels)
+| 17 | [What is a Closure?](#what-is-a-closure)
+| 18 | [What are runtime  and runtime packages?](#what-are-runtime--and-runtime-packages)
+| 19 | [How can you get how many cores your computer has?](#how-can-you-get-how-many-cores-your-computer-has)
+| 20 | [How would you tell a goroutine to use less core than what you have?](#how-would-you-tell-a-goroutine-to-use-less-core-than-what-you-have)
 
 
 
@@ -1365,6 +1374,58 @@
     A Go compiler goes through the following steps , they are in brief , if we go in detail then you will need a complete book to understand each module, for interview purpose , I have attached a hand written note , I will generate a digital form soon 
 
     ![go compiler](/img/go_compiler.jpeg)
+
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+
+12. ### What is an Interface and Why do you use it?
+    
+    The interface is a collection of methods as well as it is a custom type.
+    
+    ```go
+	package main
+  
+        import "fmt"
+          
+        // Creating an interface
+        type tank interface {
+          
+            // Methods
+            Tarea() float64
+            Volume() float64
+        }
+          
+        type myvalue struct {
+            radius float64
+            height float64
+        }
+          
+        // Implementing methods of
+        // the tank interface
+        func (m myvalue) Tarea() float64 {
+          
+            return 2*m.radius*m.height +
+                2*3.14*m.radius*m.radius
+        }
+          
+        func (m myvalue) Volume() float64 {
+          
+            return 3.14 * m.radius * m.radius * m.height
+        }
+          
+        // Main Method
+        func main() {
+          
+            // Accessing elements of
+            // the tank interface
+            var t tank
+            t = myvalue{10, 14}
+            fmt.Println("Area of tank :", t.Tarea())
+            fmt.Println("Volume of tank:", t.Volume())
+        }    
+	```
+
+    Interfaces can make code clearer, shorter, more readable, and they can provide a good API between packages, or clients (users) and servers (providers).
 
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
