@@ -1430,6 +1430,57 @@
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
 
+  13. ### What are concurrency and parralism and what is the difference between both?
+   
+    **Concurrency** :  
+    Defination 1 : Dealing with multiple things at once. <br/>
+    Defination 2 : A Composition of independently executing processes(Example: suppose there are two tasks A and B , the way this work is A task done 70% meanwhile it has to wait for something , so it picks up task B and try to complete if suppose B task has to wait at 60% , for something then it picks up A task them completes it and comes back to B )    
+
+    **Parralism** : 
+     Defination 1 : Parallelism is about doing lots of things at once. <br/>
+     Defination 2 : It is the simultaneous execution of (possibly related) computations. (Example: suppose there are two tasks A and B , it takes both tasks and try to complete both together )
+
+    ![cocurrency_parllel](/img/cocurrency_parllel.jpg)
+ 
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+  14. ### What are the difference between goroutines and threads?
+      **Threads** : A thread is just a sequence of instructions that can be executed independently by a processor. Threads  use a lot of memory due to their large stack and requires call to OS for resources (such as memory) which is slow. so doesn’t always guarantee a better performance than processes in this multi-core processor world.
+
+      **Goroutines**:Goroutines exists only in the virtual space of go runtime and not in the OS. and A goroutine is created with initial only 2KB of stack size. Each function in go already has a check if more stack is needed or not and the stack can be copied to another region in memory with twice the original size. This makes goroutine very light on resources.
+   
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+  15. ### What are channels for?
+     
+    Channels are the pipes that connect concurrent goroutines. You can send values into channels from one goroutine and receive those values into another goroutine.
+   
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+  16. ### Can you do something in goroutines without channels?
+ 
+   
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+  17. ### What is a Closure?
+ 
+   
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+  18. ### What are runtime  and runtime packages?
+ 
+   
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+  19. ### How can you get how many cores your computer has?
+ 
+   
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+  20. ### How would you tell a goroutine to use less core than what you have?
+ 
+   
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
 
 ### Table of Contents - Database Engineering
