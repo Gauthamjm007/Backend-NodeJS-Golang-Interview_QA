@@ -20,4 +20,4 @@ function hashing(num=0,str) {
   return `| ${num} | [${str}?](#${hashed})`
 }
 
-console.log(hashing(20,'How would you tell a goroutine to use less core than what you have'));
+console.log(hashing(25,'Difference between Compile time and runtime'));

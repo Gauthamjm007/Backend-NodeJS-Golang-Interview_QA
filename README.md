@@ -1254,8 +1254,11 @@
 | 18 | [What are runtime  and runtime packages?](#what-are-runtime--and-runtime-packages)
 | 19 | [How can you get how many cores your computer has?](#how-can-you-get-how-many-cores-your-computer-has)
 | 20 | [How would you tell a goroutine to use less core than what you have?](#how-would-you-tell-a-goroutine-to-use-less-core-than-what-you-have)
-
-
+| 21 | [How would you determine the type of a variable and Which package to use for it?](#how-would-you-determine-the-type-of-a-variable-and-which-package-to-use-for-it)
+| 22 | [What all types can map store?](#what-all-types-can-map-store)
+| 23 | [What are services in golang?](#what-are-services-in-golang)
+| 24 | [Why are there no classes in Go?](#why-are-there-no-classes-in-go)
+| 25 | [Difference between Compile time and runtime?](#difference-between-compile-time-and-runtime)
 
 1. ### What is Golang?
 
