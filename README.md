@@ -1249,7 +1249,7 @@
 | 13 | [What are concurrency and parralism and what is the difference between both?](#what-are-concurrency-and-parralism-and-what-is-the-difference-between-both)
 | 14 | [What are the difference between goroutines and threads?](#what-are-the-difference-between-goroutines-and-threads)
 | 15 | [What are channels for?](#what-are-channels-for)
-| 16 | [Can you do something in goroutines without channels?](#can-you-do-something-in-goroutines-without-channels)
+| 16 | [Can you do something in goroutines using channels?](#can-you-do-something-in-goroutines-using-channels)
 | 17 | [What is a Closure?](#what-is-a-closure)
 | 18 | [What are runtime  and runtime packages?](#what-are-runtime--and-runtime-packages)
 | 19 | [How can you get how many cores your computer has?](#how-can-you-get-how-many-cores-your-computer-has)
@@ -1457,28 +1457,84 @@
    
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
-  16. ### Can you do something in goroutines without channels?
- 
+  16. ### Can you do something in goroutines using channels?
+     * Channels are goroutine-safe and can store and pass values between goroutines
+     * Channels provide FIFO semantics.
+     * Channels cause goroutines to block and unblock, which we just learned about. 
    
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
   17. ### What is a Closure?
- 
+    
+     A closure is a function value that references variables from outside its body. The function may access and assign to the referenced variables
    
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
   18. ### What are runtime  and runtime packages?
- 
+  
+     The runtime library implements garbage collection, concurrency, stack management, and other critical features of the Go language. The Package runtime contains operations that interact with Go's runtime system, such as functions to control goroutines.
    
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
   19. ### How can you get how many cores your computer has?
- 
+     
+     ```go
+	     package main
+
+         import (  
+              "fmt"
+              "runtime"
+                )
+
+            func main() {
+            fmt.Println(runtime.NumCPU())
+            }
+	 ```
    
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
   20. ### How would you tell a goroutine to use less core than what you have?
+      
+        We can restrict the number of goroutines running at the same time , like below
  
+  ```go
+          package main
+
+          import (
+        	"flag"
+        	"fmt"
+        	"time"
+        	"sync"
+        ) 
+
+        // Fake a long and difficult work.
+        func DoWork() {
+        	time.Sleep(500 * time.Millisecond)
+        }
+        
+        func main() {
+        	maxNbConcurrentGoroutines := flag.Int("maxNbConcurrentGoroutines", 2, "the number of goroutines that are allowed to run concurrently")
+        	nbJobs := flag.Int("nbJobs", 5, "the number of jobs that we need to do")
+        	flag.Parse()
+        
+        	concurrentGoroutines := make(chan struct{}, *maxNbConcurrentGoroutines)
+        
+        	var wg sync.WaitGroup
+        
+        	for i := 0; i < *nbJobs; i++ {
+        		wg.Add(1)
+        		go func(i int) {
+        			defer wg.Done()
+        			concurrentGoroutines <- struct{}{}
+        			fmt.Println("doing", i)
+        			DoWork()
+        			fmt.Println("finished", i)
+        			<-concurrentGoroutines
+        		}(i)
+        	}
+        	wg.Wait()
+        }
+  ```
    
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
