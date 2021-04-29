@@ -20,4 +20,4 @@ function hashing(num=0,str) {
   return `| ${num} | [${str}?](#${hashed})`
 }
 
-console.log(hashing(25,'Difference between Compile time and runtime'));
+console.log(hashing(28,'If capacity is not defined in slice, what would the capacity be'));
