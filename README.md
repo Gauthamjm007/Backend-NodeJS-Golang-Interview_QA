@@ -1262,6 +1262,8 @@
 | 26 | [Do you need to convert the type of a variable of interface{} type passed in a function as an argument?](#do-you-need-to-convert-the-type-of-a-variable-of-interface{}-type-passed-in-a-function-as-an-argument)
 | 27 | [Why are goroutines light-weight?](#why-are-goroutines-light-weight)
 | 28 | [If capacity is not defined in slice, what would the capacity be?](#if-capacity-is-not-defined-in-slice,-what-would-the-capacity-be)
+| 29 | [What is the easiest way to check if a slice is empty?](#what-is-the-easiest-way-to-check-if-a-slice-is-empty)
+| 30 | [What is an advantage of Go evaluating implicit types at compile time?](#what-is-an-advantage-of-go-evaluating-implicit-types-at-compile-time)
 
 
 1. ### What is Golang?
