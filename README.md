@@ -1259,7 +1259,7 @@
 | 23 | [What are microservices?](#what-are-microservices)
 | 24 | [Why are there no classes in Go?](#why-are-there-no-classes-in-go)
 | 25 | [Difference between Compile time and runtime?](#difference-between-compile-time-and-runtime)
-| 26 | [Do you need to convert the type of a variable of interface{} type passed in a function as an argument?](#do-you-need-to-convert-the-type-of-a-variable-of-interface{}-type-passed-in-a-function-as-an-argument)
+| 26 | [How to generate a true random number in golang?](#how-to-generate-a-true-random-number-in-golang)
 | 27 | [Why are goroutines light-weight?](#why-are-goroutines-light-weight)
 | 28 | [If capacity is not defined in slice, what would the capacity be?](#if-capacity-is-not-defined-in-slice,-what-would-the-capacity-be)
 | 29 | [What is the easiest way to check if a slice is empty?](#what-is-the-easiest-way-to-check-if-a-slice-is-empty)
@@ -1652,6 +1652,26 @@
   25. ### Difference between Compile time and runtime?
       **Compile-time** is the time at which the source code is converted into an executable code <br/>
       **Run time** is the time at which the executable code is started running.
+
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**  
+
+
+  26. ### How to generate a true random number in golang?
+      The default number generator is deterministic, so it’ll produce the same sequence of numbers each time by default , so you need to seed it with different number you can do it with nano seconds like below
+      
+     ```go
+	 package main
+     import (
+            "fmt"
+            "math/rand"
+             "time"
+            )
+     func main(){
+        s1 := rand.NewSource(time.Now().UnixNano())
+        r1 := rand.New(s1)
+         fmt.Print(r1.Intn(100))
+     }
+	 ```
 
   **[ Back to Top ⬆ ](#table-of-contents---golang)**  
 

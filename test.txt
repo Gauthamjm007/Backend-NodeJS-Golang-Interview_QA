@@ -1,7 +1,5 @@
 
-| 23 | [What are services in golang?](#what-are-services-in-golang)
-| 24 | [Why are there no classes in Go?](#why-are-there-no-classes-in-go)
-| 25 | [Difference between Compile time and runtime?](#difference-between-compile-time-and-runtime)
+
 | 26 | [Do you need to convert the type of a variable of interface{} type passed in a function as an argument?](#do-you-need-to-convert-the-type-of-a-variable-of-interface{}-type-passed-in-a-function-as-an-argument)
 | 27 | [Why are goroutines light-weight?](#why-are-goroutines-light-weight)
 | 28 | [If capacity is not defined in slice, what would the capacity be?](#if-capacity-is-not-defined-in-slice,-what-would-the-capacity-be)
