@@ -1256,7 +1256,7 @@
 | 20 | [How would you tell a goroutine to use less core than what you have?](#how-would-you-tell-a-goroutine-to-use-less-core-than-what-you-have)
 | 21 | [How would you determine the type of a variable and Which package to use for it?](#how-would-you-determine-the-type-of-a-variable-and-which-package-to-use-for-it)
 | 22 | [What all types can map store?](#what-all-types-can-map-store)
-| 23 | [What are services in golang?](#what-are-services-in-golang)
+| 23 | [What are microservices?](#what-are-microservices)
 | 24 | [Why are there no classes in Go?](#why-are-there-no-classes-in-go)
 | 25 | [Difference between Compile time and runtime?](#difference-between-compile-time-and-runtime)
 | 26 | [Do you need to convert the type of a variable of interface{} type passed in a function as an argument?](#do-you-need-to-convert-the-type-of-a-variable-of-interface{}-type-passed-in-a-function-as-an-argument)
@@ -1612,6 +1612,42 @@
 
 
 
+
+  22. ### What all types can map store?
+      **Value** - The Value type of a mpa can be anything, including another map <br/>
+      **Key** - The key type of Map can only be values that can be compared i.e - boolean, numeric, string, pointer, channel, and interface types, and structs or arrays , that excludes - slices, maps, and functions 
+     
+      **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+  23. ### What are microservices?
+      Microservices is an architectural style that structures an application as a collection of services that are
+        * Highly maintainable and testable
+        * Loosely coupled
+        * Independently deployable
+        * Organized around business capabilities
+        * Owned by a small team
+
+     **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+  24. ### Why are there no classes in Go ?
+  
+      Go doesn't require an explicit class definition as Java, C++, C#, etc do.  Instead, a "class" is implicitly defined by providing a set of "methods" which operate on a common type.  The type may be a struct or any other user-defined type.  For example:
+
+      ```go
+	  type Integer int;
+        func (i *Integer) String() string {
+            return strconv.itoa(i)
+        }
+	  ```
+      is analogous to below code in java:<br/>
+
+      ```java
+	  class Integer {
+            public int i;
+            public String toString() { return Integer.toString(i); }
+        }
+	  ```
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**  
 
 
 
