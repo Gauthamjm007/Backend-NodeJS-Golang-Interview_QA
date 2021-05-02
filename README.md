@@ -1681,6 +1681,27 @@
 
   **[ Back to Top ⬆ ](#table-of-contents---golang)**  
 
+  28. ### If capacity is not defined in slice, what would the capacity be?
+      It would be set by default to length of the slice 
+
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**  
+
+  29. ### What is the easiest way to check if a slice is empty?
+       You can use the length (len(slice)) property to find if the slice is empty
+
+        ```go
+		if(len(slice_data)==0){
+        fmt.Println("Empty slice")
+        }
+		```
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**  
+
+  30. ### What is an advantage of Go evaluating implicit types at compile time?
+      Types can be implicitly inferred from expressions and don’t need to be explicitly specified.The special handling of interfaces and the implicit typing makes Go feel very lightweight and dynamic.
+
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**  
+
+
 ### Table of Contents - Database Engineering
 
 
