@@ -1653,6 +1653,8 @@
       **Compile-time** is the time at which the source code is converted into an executable code <br/>
       **Run time** is the time at which the executable code is started running.
 
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**  
+
 ### Table of Contents - Database Engineering
 
 
