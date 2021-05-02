@@ -1547,6 +1547,73 @@
    
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
+  21. ### How would you determine the type of a variable and Which package to use for it?
+      
+      There are three different ways to find type of variable in Golang<br/>
+       * **reflect.TypeOf Function**: Using the golang inbuilt package reflect we can find the Type of variable
+            
+            ```go
+			    package main
+  
+             
+                import (
+                    "fmt"
+                    "reflect"
+                )
+
+                func main(){
+                var string_type =  "Hello Go";
+                var complex_type =  complex(9, 15);
+                
+                 fmt.Println("string_type", reflect.TypeOf(string_type))
+                 fmt.Println("complex_type = ", reflect.TypeOf(complex_type))
+                }
+			```
+        * **reflect.ValueOf.Kind() Function** : Using the golang inbuilt package reflect we can find the Type of variable
+
+             ```go
+			    package main
+  
+              
+                import (
+                    "fmt"
+                    "reflect"
+                )
+
+                func main(){
+                var string_type =  "Hello Go";
+                var complex_type =  complex(9, 15);
+                
+                 fmt.Println("string_type", reflect.ValueOf(string_type).Kind())
+                 fmt.Println("complex_type = ", reflect.TypeOf(complex_type).Kind())
+                }
+			```
+        * **%T with Printf** : You can use Printf also to find value of variable
+
+            ```go
+			    package main
+  
+             
+                import (
+                    "fmt"
+                    "reflect"
+                )
+
+                func main(){
+                var string_type =  "Hello Go";
+                var complex_type =  complex(9, 15);
+                
+                 fmt.Printf("string_type=%T\n", string_type)
+                 fmt.Printf("complex_type =%T\n", complex_type)
+                }
+			```
+      
+      **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+
+
+
+
+
 
 ### Table of Contents - Database Engineering
 
