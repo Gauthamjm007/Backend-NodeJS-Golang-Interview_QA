@@ -1649,7 +1649,9 @@
 	  ```
   **[ Back to Top ⬆ ](#table-of-contents---golang)**  
 
-
+  25. ### Difference between Compile time and runtime?
+      **Compile-time** is the time at which the source code is converted into an executable code <br/>
+      **Run time** is the time at which the executable code is started running.
 
 ### Table of Contents - Database Engineering
 
