@@ -1675,6 +1675,12 @@
 
   **[ Back to Top ⬆ ](#table-of-contents---golang)**  
 
+
+  27. ### Why are goroutines light-weight?
+      A goroutine is created with initial only 2KB of stack size. Each function in go already has a check if more stack is needed or not and the stack can be copied to another region in memory with twice the original size. This makes goroutine very light
+
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**  
+
 ### Table of Contents - Database Engineering
 
 

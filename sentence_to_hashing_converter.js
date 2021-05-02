@@ -20,4 +20,4 @@ function hashing(num=0,str) {
   return `| ${num} | [${str}?](#${hashed})`
 }
 
-console.log(hashing(26,'How to generate a true random number in golang'));
+console.log(hashing(27,'Why are goroutines light-weight'));
