@@ -1462,32 +1462,33 @@
 
   15. ### What are channels for?
      
-    Channels are the pipes that connect concurrent goroutines. You can send values into channels from one goroutine and receive those values into another goroutine.
+      Channels are the pipes that connect concurrent goroutines. You can send values into channels from one goroutine and receive those values into another goroutine.
    
-  **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+  **[ Back to Top ⬆ ](#table-of-contents---golang)**    
 
   16. ### Can you do something in goroutines using channels?
-     * Channels are goroutine-safe and can store and pass values between goroutines
-     * Channels provide FIFO semantics.
-     * Channels cause goroutines to block and unblock, which we just learned about. 
+         * Channels are goroutine-safe and can store and pass values between goroutines
+         * Channels provide FIFO semantics.
+         * Channels cause goroutines to block and unblock, which we just learned about. 
    
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
   17. ### What is a Closure?
     
-     A closure is a function value that references variables from outside its body. The function may access and assign to the referenced variables
+         A closure is a function value that references variables from outside its body. The function may access and assign to the referenced variables.<br/>
    
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
   18. ### What are runtime  and runtime packages?
   
-     The runtime library implements garbage collection, concurrency, stack management, and other critical features of the Go language. The Package runtime contains operations that interact with Go's runtime system, such as functions to control goroutines.
+      The runtime library implements garbage collection, concurrency, stack management, and other critical features of the Go language. The Package runtime contains operations that interact with Go's runtime system, such as functions to control goroutines.
    
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
   19. ### How can you get how many cores your computer has?
+      With the help of runtime package
      
-     ```go
+      ```go
 	     package main
 
          import (  
@@ -1498,7 +1499,7 @@
             func main() {
             fmt.Println(runtime.NumCPU())
             }
-	 ```
+	  ```
    
   **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
@@ -1625,9 +1626,9 @@
         * Loosely coupled
         * Independently deployable
         * Organized around business capabilities
-        * Owned by a small team
+        * Owned by a small team <br/>
 
-     **[ Back to Top ⬆ ](#table-of-contents---golang)**   
+      **[ Back to Top ⬆ ](#table-of-contents---golang)**   
 
   24. ### Why are there no classes in Go ?
   
@@ -1657,21 +1658,21 @@
 
 
   26. ### How to generate a true random number in golang?
-      The default number generator is deterministic, so it’ll produce the same sequence of numbers each time by default , so you need to seed it with different number you can do it with nano seconds like below
+      The default number generator is deterministic, so it’ll produce the same sequence of numbers each time by default , so you need to seed it with different number you can do it with nano seconds like below <br/>
       
-     ```go
-	 package main
-     import (
+         ```go
+	     package main
+        import (
             "fmt"
             "math/rand"
              "time"
             )
-     func main(){
+        func main(){
         s1 := rand.NewSource(time.Now().UnixNano())
         r1 := rand.New(s1)
          fmt.Print(r1.Intn(100))
-     }
-	 ```
+         }
+	     ```
 
   **[ Back to Top ⬆ ](#table-of-contents---golang)**  
 
