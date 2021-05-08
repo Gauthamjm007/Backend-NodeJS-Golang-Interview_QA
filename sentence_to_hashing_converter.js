@@ -20,4 +20,4 @@ function hashing(num=0,str) {
   return `| ${num} | [${str}?](#${hashed})`
 }
 
-console.log(hashing(27,'Why are goroutines light-weight'));
+console.log(hashing(10,'What is difference between index scan and index only scan'));

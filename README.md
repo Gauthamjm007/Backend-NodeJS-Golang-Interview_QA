@@ -1716,6 +1716,9 @@
 | 5 | [What are the four Isolation levels?](#what-are-the-four-isolation-levels)
 | 6 | [Which isolation levels can prevent problems that occur in read phenomena?](#which-isolation-levels-can-prevent-problems-that-occur-in-read-phenomena)
 | 7 | [What does Eventually Consistent Mean?](#what-does-eventually-consistent-mean)
+| 8 | [What is indexing in SQL?](#what-is-indexing-in-sql)
+| 9 | [How does SQL create an Index?](#how-does-sql-create-an-index)
+| 10 | [What is difference between index scan and index only scan?](#what-is-difference-between-index-scan-and-index-only-scan)
 
 1. ### What is ACID Model in Database?
    
